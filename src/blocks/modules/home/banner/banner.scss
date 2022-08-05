@@ -1,0 +1,184 @@
+.main-banner{
+  padding: 0 0 60px;
+  background: #F4F4F4;
+
+  @media screen and (min-width: 1024px) {
+    padding: 48px 0 100px;
+  }
+
+  &__slider{
+    margin: 0 -16px;
+    background: #fff;
+  }
+
+  &__slide{
+    display: flex;
+    padding: 0 16px;
+  }
+
+  &__image{
+    display: none;
+  }
+
+  &__text{
+    padding: 32px 0 12px;
+  }
+
+  &__caption{
+    color: #888888;
+    margin-bottom: 24px;
+  }
+
+  .splide__pagination{
+    padding-bottom: 32px;
+  }
+
+  .splide__pagination li{
+    margin: 0 4px;
+  }
+
+  .splide__pagination__page{
+    width: 4px;
+    height: 4px;
+    appearance: none;
+    border: none;
+    padding: 0;
+
+    &.is-active{
+      background: #F5890A;
+    }
+
+  }
+
+  @media screen and (min-width: 480px) {
+
+    &__slider{
+      margin: 0 -25px;
+    }
+
+    &__slide{
+      padding: 0 25px;
+    }
+
+    &__more{
+      max-width: 186px;
+    }
+
+  }
+
+  @media screen and (min-width: 830px) {
+
+    &__slide{
+      padding: 0 40px;
+    }
+
+    &__text{
+      max-width: 496px;
+      padding: 80px 0;
+    }
+
+    &__image{
+      display: block;
+      align-items: center;
+      position: absolute;
+      bottom: 0;
+      right: 40px;
+      max-width: 420px;
+      width: 420px / 1224px * 100%;
+    }
+
+    &__arrows{
+      .splide__arrow{
+        appearance: none;
+        border: none;
+        padding: 0;
+        background: none;
+        width: 30px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        cursor: pointer;
+        &:hover{
+          svg path{
+            stroke: #F5890A;
+          }
+        }
+        &--next{
+          right: 0;
+        }
+        &--prev{
+          left: 0;
+        }
+      }
+    }
+
+
+
+  }
+
+  @media screen and (min-width: 1024px) {
+
+    &__slider{
+      margin: 0;
+    }
+
+    &__slide{
+      padding: 0 50px;
+    }
+
+    &__arrows{
+      .splide__arrow{
+        width: 50px;
+        &--next{
+          right: -50px;
+        }
+        &--prev{
+          left: -50px;
+        }
+      }
+    }
+
+    &__text{
+      padding: 80px 0 100px;
+    }
+
+    &__image{
+      right: 80px;
+    }
+
+  }
+
+  @media screen and (min-width: 1224px) {
+
+    &__slide{
+      padding: 0 80px 0 100px;
+    }
+
+    &__image{
+      right: 130px;
+    }
+
+
+  }
+
+  @media screen and (min-width: 1440px) {
+
+    &__arrows{
+      .splide__arrow{
+        width: 64px;
+        &--next{
+          right: -64px;
+        }
+        &--prev{
+          left: -64px;
+        }
+      }
+    }
+
+
+  }
+
+
+
+}

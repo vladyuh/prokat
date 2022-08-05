@@ -1,0 +1,50 @@
+.scroll-top
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M20 16L12 8L4 16" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+footer.footer
+    .footer-top
+        .container
+            .footer-top__content
+                .footer-top__info
+                    .footer-top__logo: img.lazyload(loading="lazy" data-src="img/common/logo-full.svg" width=184 height=38)
+                    .footer-top__desc Оказываем услуги по прокату строительного оборудования, инструментов и расходников
+                    ul.footer-top__socials
+                        li: a(href="#"): +icons('#ic_vk',18)
+                        li: a(href="#"): +icons('#ic_tg',18)
+                        li: a(href="#"): +icons('#ic_yt',18)
+                .footer-top__nav
+                    .footer-top__nav-caption Меню:
+                    ul.footer-top__nav-list
+                        li: a(href="#") Каталог
+                        li: a(href="#") Условия работы
+                        li: a(href="#") Доставка и оплата
+                        li: a(href="#") Персональные данные
+                        li: a(href="#") Контакты
+                .footer-top__feedback
+                    .footer-top__feedback-caption Наши контакты:
+                    .footer-top__phones
+                        .footer-top__phone
+                            a(href="#").link
+                                span (800) 933-21-21
+                            .address Офис: СПб, 1-й Верхний переулок д.10 к.1
+                        .footer-top__phone
+                            a(href="#").link
+                                span (800) 955-55-25
+                                span.icon: +icons('#ic_viber',20)
+                            .address Офис: СПб, 1-й Верхний переулок д.10 к.1
+                    .footer-top__callback
+                        a(href="#").btn.btn_secondary
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 2V7H18" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M19 1L13 7" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16.9995 14.9791V17.3877C17.0004 17.6113 16.9545 17.8327 16.8648 18.0375C16.775 18.2424 16.6434 18.4263 16.4783 18.5775C16.3132 18.7286 16.1183 18.8437 15.906 18.9154C15.6938 18.987 15.4689 19.0136 15.2457 18.9935C12.7702 18.725 10.3923 17.8808 8.30312 16.5286C6.35937 15.2959 4.71141 13.6512 3.47627 11.7113C2.11669 9.61679 1.27059 7.23206 1.00653 4.75036C0.986426 4.52834 1.01286 4.30457 1.08416 4.0933C1.15546 3.88203 1.27005 3.6879 1.42065 3.52325C1.57124 3.35861 1.75454 3.22706 1.95886 3.13699C2.16319 3.04691 2.38407 3.00029 2.60744 3.00008H5.02086C5.41128 2.99624 5.78977 3.13422 6.0858 3.3883C6.38182 3.64237 6.57517 3.99521 6.62981 4.38103C6.73168 5.15185 6.92059 5.9087 7.19295 6.63713C7.30118 6.9245 7.32461 7.23682 7.26045 7.53707C7.19629 7.83732 7.04723 8.11292 6.83093 8.33121L5.80925 9.35087C6.95446 11.3609 8.62206 13.0252 10.6361 14.1682L11.6578 13.1485C11.8765 12.9326 12.1527 12.7839 12.4535 12.7198C12.7544 12.6558 13.0673 12.6792 13.3552 12.7872C14.0851 13.059 14.8435 13.2476 15.6158 13.3492C16.0066 13.4042 16.3635 13.6007 16.6186 13.9012C16.8737 14.2017 17.0093 14.5853 16.9995 14.9791Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            span Заказать звонок
+    .footer-bottom
+        .container
+            .footer-bottom__content
+                .footer-bottom__copy © «Наш прокат», 2022. Все права защищены
+                .footer-bottom__dev
+                    .footer-bottom__dev-caption Поддержка сайта –
+                    .footer-bottom__dev-image: img.lazyload(loading="lazy" data-src="img/common/dev.svg" width=208 height=20)

@@ -1,0 +1,137 @@
+include ../../components/burger/burger
+header.header
+    .header-top
+        .container
+            .header-top__logo
+                picture
+                    source(srcset="img/common/logo-full.svg" media="(min-width: 768px)")
+                    img(src="img/common/logo.svg")
+            .header-top__caption Оказываем услуги по прокату стройоборудования
+            .header-top__phones
+                a(href="tel:8009555566").header-top__phone
+                    small (800)&nbsp;
+                    span 955-55-66
+                a(href="tel:8009555566").header-top__phone
+                    small (800)&nbsp;
+                    span 955-55-66
+                    span.icon: +icons('#ic_viber',20)
+            .header-top__call
+                a(href="#").btn.btn_secondary
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 2V7H18" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M19 1L13 7" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M16.9995 14.9791V17.3877C17.0004 17.6113 16.9545 17.8327 16.8648 18.0375C16.775 18.2424 16.6434 18.4263 16.4783 18.5775C16.3132 18.7286 16.1183 18.8437 15.906 18.9154C15.6938 18.987 15.4689 19.0136 15.2457 18.9935C12.7702 18.725 10.3923 17.8808 8.30312 16.5286C6.35937 15.2959 4.71141 13.6512 3.47627 11.7113C2.11669 9.61679 1.27059 7.23206 1.00653 4.75036C0.986426 4.52834 1.01286 4.30457 1.08416 4.0933C1.15546 3.88203 1.27005 3.6879 1.42065 3.52325C1.57124 3.35861 1.75454 3.22706 1.95886 3.13699C2.16319 3.04691 2.38407 3.00029 2.60744 3.00008H5.02086C5.41128 2.99624 5.78977 3.13422 6.0858 3.3883C6.38182 3.64237 6.57517 3.99521 6.62981 4.38103C6.73168 5.15185 6.92059 5.9087 7.19295 6.63713C7.30118 6.9245 7.32461 7.23682 7.26045 7.53707C7.19629 7.83732 7.04723 8.11292 6.83093 8.33121L5.80925 9.35087C6.95446 11.3609 8.62206 13.0252 10.6361 14.1682L11.6578 13.1485C11.8765 12.9326 12.1527 12.7839 12.4535 12.7198C12.7544 12.6558 13.0673 12.6792 13.3552 12.7872C14.0851 13.059 14.8435 13.2476 15.6158 13.3492C16.0066 13.4042 16.3635 13.6007 16.6186 13.9012C16.8737 14.2017 17.0093 14.5853 16.9995 14.9791Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    span Заказать звонок
+    .header-bottom
+        .container
+            .header-bottom__catalog
+                .toggle
+                    .toggle-expand: +icons("#ic_catalog",24)
+                    .toggle-collapse: +icons("#ic_catalog-close",24)
+                .caption Каталог
+            nav.header-bottom__nav
+                ul
+                    li: a(href="#") Условия работы
+                    li: a(href="#") Доставка и оплата
+                    li: a(href="#") Контакты
+            .header-bottom__search
+                +icons('#ic_search', 24)
+            a(href="#").header-bottom__favorites
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" id="ic_fav"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            form.header-bottom__form.form
+                .form__field
+                    .input.input_search.input_icon
+                        .input_icon__wrap
+                            span.icon
+                                svg(width='24' height='24')
+                                    use(xlink:href='/img/sprites/sprite.svg#ic_search')
+                            input(type='search' placeholder="Найти оборудование")
+                .header-bottom__form-close
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.7">
+                    <path d="M18 6L6 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6 6L18 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    </svg>
+            .header-bottom__dropdown
+                .header-bottom__dropdown-section
+                    .caption Каталог:
+                    ul.list-items
+                        li.list-items__item
+                            .list-items__image: img.lazyload(data-src="img/common/img_01-7.jpg" loading="lazy")
+                            a(href="#").list-items__title Электроинструменты
+                            ul.list-items__submenu
+                                li: a(href="#") Отбойные молотки
+                                li: a(href="#") Перфораторы
+                                li: a(href="#") Ножницы по металлу
+                                li: a(href="#") Штроборезы
+                                li: a(href="#") Монтажные пилы
+                                li.hidden: a(href="#") Монтажные пилы
+                        li.list-items__item
+                            .list-items__image: img.lazyload(data-src="img/common/img_01.jpg" loading="lazy")
+                            a(href="#").list-items__title Оборудование для работ с бетоном
+                            ul.list-items__submenu
+                                li: a(href="#") Виброрейка
+                                li: a(href="#") Бетономешалка
+                                li: a(href="#") Глубинный вибратор
+                                li: a(href="#") Миксер
+                                li: a(href="#") Инструмент для гибки арматуры (Армогибы)
+                        li.list-items__item
+                            .list-items__image: img.lazyload(data-src="img/common/img_01-1.jpg" loading="lazy")
+                            a(href="#").list-items__title Компрессоры и насосы
+                            ul.list-items__submenu
+                                li: a(href="#") Дизельные компрессоры
+                                li: a(href="#") Электрические компрессоры
+                                li: a(href="#") Мотопомпы
+                                li: a(href="#") Погружные насосы
+                        li.list-items__item
+                            .list-items__image: img.lazyload(data-src="img/common/img_01-2.jpg" loading="lazy")
+                            a(href="#").list-items__title Электростанции
+                                ul.list-items__submenu
+                                    li: a(href="#") Дизельные электростанции
+                                    li: a(href="#") Бензиновые электростанции
+                        li.list-items__item.hidden
+                            .list-items__image: img.lazyload(data-src="img/common/img_01-6.jpg" loading="lazy")
+                            a(href="#").list-items__title Электроинструменты
+                            ul.list-items__submenu
+                                li: a(href="#") Отбойные молотки
+                                li: a(href="#") Перфораторы
+                                li: a(href="#") Ножницы по металлу
+                                li: a(href="#") Штроборезы
+                                li: a(href="#") Монтажные пилы
+                        li.list-items__item.hidden
+                            .list-items__image: img.lazyload(data-src="img/common/img_01-5.jpg" loading="lazy")
+                            a(href="#").list-items__title Оборудование для работ с бетоном
+                            ul.list-items__submenu
+                                li: a(href="#") Виброрейка
+                                li: a(href="#") Бетономешалка
+                                li: a(href="#") Глубинный вибратор
+                                li: a(href="#") Миксер
+                                li: a(href="#") Инструмент для гибки арматуры (Армогибы)
+                        li.list-items__item.hidden
+                            .list-items__image: img.lazyload(data-src="img/common/img_01-4.jpg" loading="lazy")
+                            a(href="#").list-items__title Компрессоры и насосы
+                            ul.list-items__submenu
+                                li: a(href="#") Дизельные компрессоры
+                                li: a(href="#") Электрические компрессоры
+                                li: a(href="#") Мотопомпы
+                                li: a(href="#") Погружные насосы
+                        li.list-items__item.hidden
+                            .list-items__image: img.lazyload(data-src="img/common/img_01-3.jpg" loading="lazy")
+                            a(href="#").list-items__title Электростанции
+                                ul.list-items__submenu
+                                    li: a(href="#") Дизельные электростанции
+                                    li: a(href="#") Бензиновые электростанции
+                    button.all-btn(data-title-expand="Весь каталог" data-title-hide="Скрыть")
+                        span Весь каталог
+                        +icons('#ic_chevron-down', 20)
+                .header-bottom__dropdown-section.info
+                    .caption Информация:
+                    ul.list-items
+                        li.list-items__item
+                            a(href="#").list-items__title Условия работы
+                        li.list-items__item
+                            a(href="#").list-items__title Доставка и оплата
+                        li.list-items__item
+                            a(href="#").list-items__title Контакты

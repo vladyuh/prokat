@@ -1,0 +1,39 @@
+@import "../components/burger/burger.scss";
+@import "../components/breadcrumbs/breadcrumbs.scss";
+@import "../components/button/button.scss";
+@import "../components/checkbox/checkbox.scss";
+@import "../components/form/form.scss";
+@import "../components/mobile-menu/mobile-menu.scss";
+@import "../components/headers/headers.scss";
+@import "../components/popup/popup.scss";
+@import "../components/table/table.scss";
+
+.catalog-more{
+  display: none;
+  align-items: center;
+  margin-top: 16px;
+  cursor: pointer;
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+  }
+
+  svg{
+    transition: all 0.25s ease;
+  }
+
+  &.is-active{
+    svg{
+      transform: scaleY(-1);
+    }
+  }
+
+  span{
+    font-weight: 600;
+    margin-right: 12px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+    border-bottom: 1px solid #E6E6E6;
+  }
+}

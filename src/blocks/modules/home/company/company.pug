@@ -1,0 +1,35 @@
+section.main-company
+    .container
+        .main-company__heading
+            .icon: +icons("#ic_logo",40)
+            .section-h2 Условия компании «Наш Прокат»
+        .main-company__content
+            .main-company__desc
+                p.
+                    «Наш прокат» – это динамично развивающаяся компания в сфере предоставления услуг по аренде строительного оборудования и инструмента, с опытом работы более 10 лет.
+            .main-company__more(data-title-expand="Читать далее" data-title-hide="Скрыть")
+                span Читать далее
+                svg(width='20' height='20')
+                    use(xlink:href='/img/sprites/sprite.svg#ic_chevron-down')
+            .main-company__items
+                .main-company__item
+                    .number 10 лет
+                    .caption Плодотворной работы
+                .main-company__item
+                    .number 900+
+                    .caption Расходных материалов
+                .main-company__item
+                    .number 200+
+                    .caption Единиц оборудования
+                .main-company__item
+                    .number 3600+
+                    .caption Довольных клиентов
+            .main-company__text.hidden
+                p.
+                    В нашей компании Вы получите оборудование, которое необходимо на любом этапе строительства: при подготовке фундамента; для выравнивания бетонных или деревянных полов; при отделочных работах; для работ с кровлей; при создании ландшафтных работ; в домашнем хозяйстве.
+                p.
+                    Мы подберем для Вас именно тот инструмент, который даст возможность выполнить поставленную задачу быстро и качественно, без лишних усилий и затрат.
+            .main-company__image
+                picture
+                    source(srcset="")
+                    img.lazyload(loading="lazy" data-src="img/home/company.png")

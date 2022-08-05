@@ -1,0 +1,24 @@
+extends layouts/default
+include helpers/mixins
+include ../blocks/components/breadcrumbs/breadcrumbs.pug
+include ../blocks/components/form/form.pug
+include ../blocks/components/checkbox/checkbox.pug
+include ../blocks/components/headers/headers.pug
+include ../blocks/components/table/table.pug
+include ../blocks/components/popup/popup.pug
+
+
+block variables
+    - const title = "Главная"
+
+block styles
+    link(rel="stylesheet" href="styles/index.css")
+block content
+    include ../blocks/modules/home/banner/banner
+    include ../blocks/modules/home/catalog/catalog
+    include ../blocks/modules/home/rent/rent
+    include ../blocks/modules/home/company/company
+    include ../blocks/modules/home/conditions/conditions
+block scripts
+    script(src="js/main.js")
+    script(src="js/index.js")

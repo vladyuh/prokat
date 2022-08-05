@@ -1,0 +1,27 @@
+mixin callbackPopup
+    .popup#callback
+        .popup__wrapper
+            .popup__close
+                a(href="#close"): +icons('#ic_close', 24)
+            .popup__content
+                .section-h3 Попап формы
+                form(action="").form
+                    .form__field
+                        +input({
+                            type: 'text',
+                            placeholder: "Ваше имя",
+                            required: true,
+                        })
+                    .form__field
+                        +input({
+                            type: 'tel',
+                            placeholder: "Ваш телефон",
+                            required: true,
+                        })
+                    .form__field
+                        +input({
+                            type: 'hidden',
+                            value: "Заказать звонок",
+                        })
+                    .form__submit
+                        button.btn.btn-round(type="submit") Отправить

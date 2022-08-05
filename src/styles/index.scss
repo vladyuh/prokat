@@ -1,0 +1,10 @@
+@import "helpers/variables";
+@import "helpers/mixins";
+
+@import "vendor/splide-core";
+
+@import "../blocks/modules/home/banner/banner";
+@import "../blocks/modules/home/catalog/catalog";
+@import "../blocks/modules/home/rent/rent";
+@import "../blocks/modules/home/company/company";
+@import "../blocks/modules/home/conditions/conditions";

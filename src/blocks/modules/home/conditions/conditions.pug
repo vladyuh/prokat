@@ -1,0 +1,44 @@
+section.main-conditions
+    .container
+        .main-conditions__heading
+            .icon: +icons("#ic_steps",40)
+            .section-h2 Условия аренды
+        ul.main-conditions__items
+            li.main-conditions__item
+                .icon: img.lazyload(data-src="img/svg/ic_step-1.svg" width=64 height=64 loading="lazy")
+                .caption <strong>Связаться</strong> с нами по телефону или отправить заявку на нашем сайте
+            li.main-conditions__item
+                .icon: img.lazyload(data-src="img/svg/ic_step-2.svg" width=64 height=64 loading="lazy")
+                .caption <strong>Приехать к нам</strong> в офис или склад для заключения договора и получения оборудования
+            li.main-conditions__item
+                .icon: img.lazyload(data-src="img/svg/ic_step-3.svg" width=64 height=64 loading="lazy")
+                .caption Предъявить <strong>паспорт</strong> и заключить договор или внести небольшой денежный <strong>залог</strong> при отсутствии паспорта
+            li.main-conditions__item
+                .icon: img.lazyload(data-src="img/svg/ic_step-4.svg" width=64 height=64 loading="lazy")
+                .caption После заключения договора и оплаты <strong>забрать оборудование</strong> на необходимый срок
+        form.main-conditions__form.form
+            .form__image
+                picture
+                    source(srcset="")
+                    img.lazyload(data-src="img/home/form.png" loading="lazy")
+            .form__content
+                .form__title
+                    .icon: +icons('#ic_bulb',40)
+                    .section-h2 Остались вопросы?
+                .form__desc Оставьте контакты и через 5 минут наш менеджер поможет вам выбрать выгодные условия аренды и расскажет о скидках.
+                .form__fields
+                    .form__field
+                        .input.input_text
+                            input(type='text' placeholder='Имя')
+                    .form__field
+                        .input.input_tel
+                            input(type='tel' placeholder='Телефон *' required)
+                    .form__submit
+                        button(type=submit).btn.btn_primary Отправить заявку
+                    .form__agreement
+                        label.checkbox
+                            input(type='checkbox' required checked)
+                            span.checkbox__elem
+                            span.checkbox__text Нажимая на кнопку, даю согласие на обработку <a href="#">персональных данных</a>
+
+

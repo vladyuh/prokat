@@ -1,0 +1,75 @@
+include ../../../components/card/card
+-
+    var list = [
+        {
+            image: "/img/products/1",
+            name: "Шлифовальная машина МИСОМ СО-206.1А",
+            features: [
+                "Вес – 82 кг ",
+                "Мощность – 2200 Вт ",
+                "Число оборотов – 460 об/мин"
+            ],
+            price: "от 1300 ₽/сутки"
+        },
+        {
+            image: "/img/products/2",
+            name: "Штроборез Makita SG1250",
+            features: [
+                "Диаметр диска – 125 мм",
+                "Вес – 4.1 кг",
+                "Мощность – 1400 Вт"
+            ],
+            price: "от 1300 ₽/сутки"
+        },
+        {
+            image: "/img/products/3",
+            name: "Бензорез Husqvarna K760",
+            features: [
+                "Вес – 9,6 кг",
+                "Мощность – 3,7 кВт",
+                "Глубина пропила – 125 мм"
+            ],
+            price: "от 2000 ₽/сутки"
+        },
+        {
+            image: "/img/products/4",
+            name: "Фрезеровальная машина по бетону Schwamborn BEF203",
+            features: [
+                "Вес – 82 кг ",
+                "Мощность – 2200 Вт ",
+                "Число оборотов – 460 об/мин"
+            ],
+            price: "от 1000 ₽/сутки"
+        },
+        {
+            image: "/img/products/4",
+            name: "Фрезеровальная машина по бетону Schwamborn BEF203",
+            features: [
+                "Вес – 82 кг ",
+                "Мощность – 2200 Вт ",
+                "Число оборотов – 460 об/мин"
+            ],
+            price: "от 1000 ₽/сутки"
+        },
+    ]
+
+section.main-rent
+    .container
+        .main-rent__heading
+            .icon: +icons('#ic_rent', 40)
+            .section-h2 Часто арендуют
+        .main-rent__slider.splide
+            .splide__track
+                ul.splide__list
+                    each item in list
+                        li.splide__slide.main-rent__slide
+                            +card(item)
+            .splide__arrows.main-rent__arrows
+                button.splide__arrow.splide__arrow--prev
+                        <svg width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 25L1 13L13 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                button.splide__arrow.splide__arrow--next
+                        <svg width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 25L13 13L1 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
