@@ -30,6 +30,10 @@ $btnPrimary: #448aff;
     border: 2px solid #F5890A;
     text-transform: uppercase;
 
+    svg path{
+      transition: all 0.25s ease;
+    }
+
     span{
       padding-left: 12px;
     }

@@ -11,6 +11,10 @@
     background: #fff;
   }
 
+  &__arrows{
+    display: none;
+  }
+
   &__slide{
     display: flex;
     padding: 0 16px;
@@ -38,8 +42,8 @@
   }
 
   .splide__pagination__page{
-    width: 4px;
-    height: 4px;
+    width: 6px;
+    height: 6px;
     appearance: none;
     border: none;
     padding: 0;
@@ -88,6 +92,7 @@
     }
 
     &__arrows{
+      display: block !important;
       .splide__arrow{
         appearance: none;
         border: none;

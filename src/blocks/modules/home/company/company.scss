@@ -135,7 +135,7 @@
     &__content{
       flex-direction: row;
       flex-wrap: wrap;
-      align-items: flex-start;
+      align-items: center;
     }
 
     &__items{
@@ -165,6 +165,10 @@
   }
 
   @media screen and (min-width: 640px) {
+
+    &__items{
+      padding-left: 24px;
+    }
 
     &__item{
       .number{
@@ -200,27 +204,27 @@
       font-size: 18px;
       line-height: 40px / 28px * 100%;
       font-weight: 700;
-      margin-bottom: 16px;
+      margin-bottom: 0px;
     }
 
     &__items{
-      order: 2;
-      max-width: 320px;
-      width: 320px / 1224px * 100%;
+      order: 3;
+      width: calc(100% - 392px);
       margin-right: 0;
     }
 
     &__item{
+      width: calc(50% - 16px);
+
       .number{
         font-size: 44px;
       }
     }
 
     &__text{
-      order: 3;
+      order: 2;
       display: block;
       width: 100%;
-      max-width: 368px;
       margin: 0 auto;
       p{
         margin-top: 0;
@@ -229,7 +233,7 @@
 
     &__image{
       width: 392px / 1224px * 100%;
-      max-width: 392px;
+      max-width: 352px;
       margin-right: -50px;
     }
 

@@ -2,26 +2,31 @@ mixin callbackPopup
     .popup#callback
         .popup__wrapper
             .popup__close
-                a(href="#close"): +icons('#ic_close', 24)
+                a(href="#close"): +icons('#ic_close-popup', 36)
             .popup__content
-                .section-h3 Попап формы
+                .section-h2 Заказать звонок
                 form(action="").form
-                    .form__field
-                        +input({
-                            type: 'text',
-                            placeholder: "Ваше имя",
-                            required: true,
-                        })
-                    .form__field
-                        +input({
-                            type: 'tel',
-                            placeholder: "Ваш телефон",
-                            required: true,
-                        })
-                    .form__field
-                        +input({
-                            type: 'hidden',
-                            value: "Заказать звонок",
-                        })
-                    .form__submit
-                        button.btn.btn-round(type="submit") Отправить
+                    .form__caption Контактные данные
+                    .form__fields
+                        .form__field
+                            +input({
+                                type: 'text',
+                                placeholder: "Имя",
+                                required: true,
+                            })
+                        .form__field
+                            +input({
+                                type: 'tel',
+                                placeholder: "Телефон *",
+                                required: true,
+                            })
+                    .form__footer
+                        .form__submit
+                            button.btn.btn_primary(type="submit") Жду звонка
+                        .form__agreement
+                            label.checkbox
+                                input(type='checkbox' required='' checked='')
+                                span.checkbox__elem
+                                span.checkbox__text
+                                    | Нажимая на кнопку, даю согласие на обработку
+                                    a(href='#')  персональных данных

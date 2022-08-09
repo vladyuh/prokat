@@ -56,6 +56,7 @@ window.addEventListener("scroll", function () {
 
 //Load scripts after page load
 window.addEventListener("load", function () {
+
     var select = document.createElement("script");
     select.src = "/js/select.min.js";
     select.onload = function () {
@@ -65,6 +66,16 @@ window.addEventListener("load", function () {
         selectCustom.init();
     };
     document.body.appendChild(select);
+
+    var maska = document.createElement("script");
+    maska.src = "/js/maska.min.js";
+    maska.onload = function () {
+        var mask = Maska.create('input[type="tel"]', {
+            mask: '+375 (##) ###-##-##'
+        });
+    };
+    document.body.appendChild(maska);
+
 });
 
 //open popup
@@ -110,6 +121,7 @@ var headerSearch = document.querySelectorAll(".header-bottom__search, .header-bo
 headerSearch.forEach(function (el) {
     el.addEventListener("click", () => {
         document.querySelector(".header-bottom__form").classList.toggle("is-active");
+        document.querySelector('.header-bottom__form .input input[type="search"]').focus();
     });
 });
 

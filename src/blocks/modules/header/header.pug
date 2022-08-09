@@ -16,7 +16,7 @@ header.header
                     span 955-55-66
                     span.icon: +icons('#ic_viber',20)
             .header-top__call
-                a(href="#").btn.btn_secondary
+                a(href="#callback").btn.btn_secondary
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M13 2V7H18" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M19 1L13 7" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -59,7 +59,10 @@ header.header
                     .caption Каталог:
                     ul.list-items
                         li.list-items__item
-                            .list-items__image: img.lazyload(data-src="img/common/img_01-7.jpg" loading="lazy")
+                            .list-items__image
+                                picture
+                                    source(srcset="img/common/img_01-7.webp" type="image/webp")
+                                    img.lazyload(data-src="img/common/img_01-7.jpg" loading="lazy")
                             a(href="#").list-items__title Электроинструменты
                             ul.list-items__submenu
                                 li: a(href="#") Отбойные молотки
@@ -69,7 +72,10 @@ header.header
                                 li: a(href="#") Монтажные пилы
                                 li.hidden: a(href="#") Монтажные пилы
                         li.list-items__item
-                            .list-items__image: img.lazyload(data-src="img/common/img_01.jpg" loading="lazy")
+                            .list-items__image
+                                picture
+                                    source(srcset="img/common/img_01.webp" type="image/webp")
+                                    img.lazyload(data-src="img/common/img_01.jpg" loading="lazy")
                             a(href="#").list-items__title Оборудование для работ с бетоном
                             ul.list-items__submenu
                                 li: a(href="#") Виброрейка
@@ -78,7 +84,10 @@ header.header
                                 li: a(href="#") Миксер
                                 li: a(href="#") Инструмент для гибки арматуры (Армогибы)
                         li.list-items__item
-                            .list-items__image: img.lazyload(data-src="img/common/img_01-1.jpg" loading="lazy")
+                            .list-items__image
+                                picture
+                                    source(srcset="img/common/img_01-1.webp" type="image/webp")
+                                    img.lazyload(data-src="img/common/img_01-1.jpg" loading="lazy")
                             a(href="#").list-items__title Компрессоры и насосы
                             ul.list-items__submenu
                                 li: a(href="#") Дизельные компрессоры
@@ -86,13 +95,19 @@ header.header
                                 li: a(href="#") Мотопомпы
                                 li: a(href="#") Погружные насосы
                         li.list-items__item
-                            .list-items__image: img.lazyload(data-src="img/common/img_01-2.jpg" loading="lazy")
+                            .list-items__image
+                                picture
+                                    source(srcset="img/common/img_01-2.webp" type="image/webp")
+                                    img.lazyload(data-src="img/common/img_01-2.jpg" loading="lazy")
                             a(href="#").list-items__title Электростанции
                                 ul.list-items__submenu
                                     li: a(href="#") Дизельные электростанции
                                     li: a(href="#") Бензиновые электростанции
                         li.list-items__item.hidden
-                            .list-items__image: img.lazyload(data-src="img/common/img_01-6.jpg" loading="lazy")
+                            .list-items__image
+                                picture
+                                    source(srcset="img/common/img_01-6.webp" type="image/webp")
+                                    img.lazyload(data-src="img/common/img_01-6.jpg" loading="lazy")
                             a(href="#").list-items__title Электроинструменты
                             ul.list-items__submenu
                                 li: a(href="#") Отбойные молотки
@@ -101,7 +116,10 @@ header.header
                                 li: a(href="#") Штроборезы
                                 li: a(href="#") Монтажные пилы
                         li.list-items__item.hidden
-                            .list-items__image: img.lazyload(data-src="img/common/img_01-5.jpg" loading="lazy")
+                            .list-items__image
+                                picture
+                                    source(srcset="img/common/img_01-5.webp" type="image/webp")
+                                    img.lazyload(data-src="img/common/img_01-5.jpg" loading="lazy")
                             a(href="#").list-items__title Оборудование для работ с бетоном
                             ul.list-items__submenu
                                 li: a(href="#") Виброрейка
@@ -110,7 +128,10 @@ header.header
                                 li: a(href="#") Миксер
                                 li: a(href="#") Инструмент для гибки арматуры (Армогибы)
                         li.list-items__item.hidden
-                            .list-items__image: img.lazyload(data-src="img/common/img_01-4.jpg" loading="lazy")
+                            .list-items__image
+                                picture
+                                    source(srcset="img/common/img_01-4.webp" type="image/webp")
+                                    img.lazyload(data-src="img/common/img_01-4.jpg" loading="lazy")
                             a(href="#").list-items__title Компрессоры и насосы
                             ul.list-items__submenu
                                 li: a(href="#") Дизельные компрессоры
@@ -118,7 +139,10 @@ header.header
                                 li: a(href="#") Мотопомпы
                                 li: a(href="#") Погружные насосы
                         li.list-items__item.hidden
-                            .list-items__image: img.lazyload(data-src="img/common/img_01-3.jpg" loading="lazy")
+                            .list-items__image
+                                picture
+                                    source(srcset="img/common/img_01-3.webp" type="image/webp")
+                                    img.lazyload(data-src="img/common/img_01-3.jpg" loading="lazy")
                             a(href="#").list-items__title Электростанции
                                 ul.list-items__submenu
                                     li: a(href="#") Дизельные электростанции

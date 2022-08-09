@@ -437,6 +437,9 @@
                 padding-right: 24px;
                 padding-left: 24px;
                 margin-right: 0;
+                &:hover{
+                    background: #CC6E00;
+                }
             }
 
             &__nav{
@@ -459,7 +462,6 @@
                         text-transform: uppercase;
                         color: #FFFFFF;
                         position: relative;
-
                     }
 
                     li:not(:last-child) a::after{
