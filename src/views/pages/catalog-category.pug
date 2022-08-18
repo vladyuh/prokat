@@ -1,0 +1,411 @@
+extends ../layouts/default
+include ../helpers/mixins
+include ../../blocks/components/breadcrumbs/breadcrumbs.pug
+include ../../blocks/components/form/form.pug
+include ../../blocks/components/checkbox/checkbox.pug
+include ../../blocks/components/headers/headers.pug
+include ../../blocks/components/table/table.pug
+include ../../blocks/components/popup/popup.pug
+include ../../blocks/components/card/card
+
+block variables
+    - const title = "Аренда компрессоров и насосов"
+
+block styles
+    link(rel="stylesheet" href="styles/catalog.css")
+block content
+
+    .page-breadcrumbs
+        .container
+            +breadcrumb([
+                {
+                    link: "/",
+                    text: "Главная"
+                },
+                {
+                    link: "/catalog.html",
+                    text: "Каталог",
+                },
+                {
+                    link: "/catalog-category.html",
+                    text: "Компрессоры и насосы",
+                    isActive: true,
+                }
+            ])
+
+    .page-title
+        .container
+            h1.section-h1.page-title__heading Аренда компрессоров и насосов
+
+    section.catalog-cat
+        .container
+            .catalog-cat__sidebar
+                ul.catalog-cat__sections
+                    li.catalog-cat__section
+                        a(href="#").name Электроинструменты
+                        span.toggle: include ../../img/svg/ic_chevron.svg
+                        ul.list
+                            li
+                                a(href='#') Отбойные молотки
+                            li
+                                a(href='#') Перфораторы
+                            li
+                                a(href='#') Ножницы по металлу
+                            li
+                                a(href='#') Штроборезы
+                            li
+                                a(href='#') Монтажные пилы
+                            li
+                                a(href='#') Торцовочные пилы
+                            li
+                                a(href='#') Циркулярные пилы
+                            li
+                                a(href='#') Сабельные пилы
+                            li
+                                a(href='#') УШМ
+                            li
+                                a(href='#') Краскопульты
+                            li
+                                a(href='#') Электрорубанки
+                            li
+                                a(href='#') Электролобзики
+                            li
+                                a(href='#') Шуруповерты
+                    li.catalog-cat__section
+                        a(href="#").name Электростанции
+                        span.toggle: include ../../img/svg/ic_chevron.svg
+                        ul.list
+                            li: a(href="#") Дизельные электростанции
+                            li: a(href="#") Бензиновые электростанции
+                    li.catalog-cat__section
+                        a(href="#").name Компрессоры и насосы
+                        span.toggle: include ../../img/svg/ic_chevron.svg
+                        ul.list
+                            li: a(href="#") Дизельные компрессоры
+                            li: a(href="#") Электрические компрессоры
+                            li: a(href="#") Мотопомпы
+                            li: a(href="#") Погружные насосы
+                    li.catalog-cat__section
+                        a(href="#").name Оборудование для работ с бетоном
+                        span.toggle: include ../../img/svg/ic_chevron.svg
+                        ul.list
+                            li
+                                a(href='#') Виброрейка
+                            li
+                                a(href='#') Бетономешалка
+                            li
+                                a(href='#') Глубинный вибратор
+                            li
+                                a(href='#') Миксер
+                            li
+                                a(href='#') Оборудование для обогрева бетона
+                            li
+                                a(href='#') Растворные емкости
+                            li
+                                a(href='#') Инструмент для вязки арматуры
+                            li
+                                a(href='#') Инструмент для резки арматуры
+                            li
+                                a(href='#') Инструмент для гибки арматуры (Армогибы)
+                            li
+                                a(href='#') Монолитные стойки
+                    li.catalog-cat__section
+                        a(href="#").name Оборудование для работ с бетоном
+                        span.toggle: include ../../img/svg/ic_chevron.svg
+                        ul.list
+                            li
+                                a(href='#') Виброрейка
+                            li
+                                a(href='#') Бетономешалка
+                            li
+                                a(href='#') Глубинный вибратор
+                            li
+                                a(href='#') Миксер
+                            li
+                                a(href='#') Оборудование для обогрева бетона
+                            li
+                                a(href='#') Растворные емкости
+                            li
+                                a(href='#') Инструмент для вязки арматуры
+                            li
+                                a(href='#') Инструмент для резки арматуры
+                            li
+                                a(href='#') Инструмент для гибки арматуры (Армогибы)
+                            li
+                                a(href='#') Монолитные стойки
+                    li.catalog-cat__section
+                        a(href="#").name Дорожно-строительная техника
+                        span.toggle: include ../../img/svg/ic_chevron.svg
+                        ul.list
+                            li
+                                a(href='#') Виброплиты
+                            li
+                                a(href='#') Вибротрамбовки
+                            li
+                                a(href='#') Резчики швов
+                            li
+                                a(href='#') Бензорезы
+                            li
+                                a(href='#') Воздуходувка
+                            li
+                                a(href='#') Виброкатки
+                            li
+                                a(href='#') Осветительные мачты
+                            li
+                                a(href='#') Бензиновые отбойные молотки
+                    li.catalog-cat__section
+                        a(href="#").name Садовый инструмент
+                        span.toggle: include ../../img/svg/ic_chevron.svg
+                        ul.list
+                            li
+                                a(href='#') Снегоуборочные машины
+                            li
+                                a(href='#') Бензопилы
+                            li
+                                a(href='#') Культиваторы и мотоблоки
+                            li
+                                a(href='#') Триммеры
+                            li
+                                a(href='#') Газонокосилки
+                            li
+                                a(href='#') Монтажные пилы
+                            li
+                                a(href='#') Монтажные пилы
+                            li
+                                a(href='#') Монтажные пилы
+                    li.catalog-cat__section
+                        a(href="#").name Шлифовальное оборудование
+                        span.toggle: include ../../img/svg/ic_chevron.svg
+                        ul.list
+                            li
+                                a(href='#') Мозаично-шлифовальные машины
+                            li
+                                a(href='#') Паркето-шлифовальные машины
+                            li
+                                a(href='#') Затирочные машины по бетону
+                            li
+                                a(href='#') Эксцентриковые шлифовальные машины
+                            li
+                                a(href='#') Ленточно-шлифовальные машины
+                            li
+                                a(href='#') Шлифовальные машины для стен
+                            li
+                                a(href='#') Фрезеровальные машины по бетону
+                            li
+                                a(href='#') Строгальные машины
+                    li.catalog-cat__section
+                        a(href="#").name Леса и опалубки
+                        span.toggle: include ../../img/svg/ic_chevron.svg
+                        ul.list
+                            li
+                                a(href='#') Строительные леса
+                            li
+                                a(href='#') Вышки тура
+                            li
+                                a(href='#') Лестницы и стремянки
+                            li
+                                a(href='#') Опалубка
+                            li
+                                a(href='#') Сетка для строительных лесов
+                            li
+                                a(href='#') Рукав для мусора
+            .catalog-cat__content
+                .catalog-cat__subcategories
+                    a(href="catalog-subcategory.html").catalog-cat__subcategory
+                        .image
+                            picture
+                                source(srcset="")
+                                img.lazyload(loading="lazy" data-src="img/catalog/sub-1.png")
+                        .caption Дизельные компрессоры
+                    a(href="catalog-subcategory.html").catalog-cat__subcategory
+                        .image
+                            picture
+                                source(srcset="")
+                                img.lazyload(loading="lazy" data-src="img/catalog/sub-2.png")
+                        .caption Электрические компрессоры
+                    a(href="catalog-subcategory.html").catalog-cat__subcategory
+                        .image
+                            picture
+                                source(srcset="")
+                                img.lazyload(loading="lazy" data-src="img/catalog/sub-3.png")
+                        .caption Мотопомпы
+                    a(href="catalog-subcategory.html").catalog-cat__subcategory
+                        .image
+                            picture
+                                source(srcset="")
+                                img.lazyload(loading="lazy" data-src="img/catalog/sub-4.png")
+                        .caption Погружные насосы
+                .catalog-cat__products
+
+                    -
+                        var list = [
+                            {
+                                image: "/img/catalog/cat-1",
+                                name: "Дизельный компрессор Atlas Copco XAS 186",
+                                features: [
+                                        "Мощность – 86 кВт",
+                                        "Производительность – 11,1 м3/мин",
+                                        "Вес с шасси – 1900 кг",
+                                ],
+                                price: "6000 ₽/сутки"
+                            },
+                            {
+                                image: "/img/catalog/cat-2",
+                                name: "Дизельный компрессор Atlas Copco XAS 97",
+                                features: [
+                                    "Мощность – 36 кВт",
+                                    "Производительность – 5,3 м3/мин",
+                                    "Вес с шасси – 885 кг",
+                                ],
+                                price: "4000 ₽/сутки"
+                            },
+                            {
+                                image: "/img/catalog/cat-3",
+                                name: "Компрессор Wester W 024-180 OLC",
+                                features: [
+                                    "Вес – 24 кг ",
+                                    "Мощность – 1800 Вт ",
+                                    "Напряжение – 220 В",
+                                ],
+                                price: "от 1300 ₽/сутки"
+                            },
+                            {
+                                image: "/img/catalog/cat-34",
+                                name: "Компрессор Ergus DV 370-50",
+                                features: [
+                                    "Мощность – 86 кВт",
+                                    "Производительность – 11,1 м3/мин",
+                                    "Число оборотов – 460 об/мин",
+                                ],
+                                price: "6000 ₽/сутки"
+                            },
+                            {
+                                image: "/img/catalog/cat-5",
+                                name: "Компрессор Wester W 100-220 OLC",
+                                features: [
+                                    "Вес – 82 кг ",
+                                    "Мощность – 2200 Вт ",
+                                    "Число оборотов – 460 об/мин",
+                                ],
+                                price: "4000 ₽/сутки"
+                            },
+                            {
+                                image: "/img/catalog/cat-6",
+                                name: "Компрессор поршневой REMEZA СБ4/Ф-270 LB50",
+                                features: [
+                                    "Вес – 82 кг ",
+                                    "Мощность – 2200 Вт ",
+                                    "Число оборотов – 460 об/мин",
+                                ],
+                                price: "от 1300 ₽/сутки"
+                            },
+                            {
+                                image: "/img/catalog/cat-7",
+                                name: "Мотопомпа Wacker Neuson MDP-3",
+                                features: [
+                                    "Мощность – 86 кВт",
+                                    "Производительность – 11,1 м3/мин",
+                                    "Вес с шасси – 1900 кг",
+                                ],
+                                price: "6000 ₽/сутки"
+                            },
+                            {
+                                image: "/img/catalog/cat-8",
+                                name: "Мотопомпа Koshin KTH-50X",
+                                features: [
+                                    "Мощность – 36 кВт",
+                                    "Производительность – 5,3 м3/мин",
+                                    "Вес с шасси – 885 кг",
+                                ],
+                                price: "4000 ₽/сутки"
+                            },
+                            {
+                                image: "/img/catalog/cat-9",
+                                name: "Мотопомпа Champion GTP80",
+                                features: [
+                                    "Вес – 24 кг ",
+                                    "Мощность – 1800 Вт ",
+                                    "Напряжение – 220 В",
+                                ],
+                                price: "от 1300 ₽/сутки"
+                            },
+                            {
+                                image: "/img/catalog/cat-10",
+                                name: "Мотопомпа Makita EW1050HX",
+                                features: [
+                                    "Мощность – 86 кВт",
+                                    "Производительность – 11,1 м3/мин",
+                                    "Число оборотов – 460 об/мин",
+                                ],
+                                price: "6000 ₽/сутки"
+                            },
+                            {
+                                image: "/img/catalog/cat-11",
+                                name: "Диафрагменная мотопомпа Wacker Neuson PDI 3A",
+                                features: [
+                                    "Вес – 82 кг ",
+                                    "Мощность – 2200 Вт ",
+                                    "Число оборотов – 460 об/мин",
+                                ],
+                                price: "4000 ₽/сутки"
+                            },
+                            {
+                                image: "/img/catalog/cat-12",
+                                name: "Компрессор поршневой REMEZA СБ4/Ф-270 LB50",
+                                features: [
+                                    "Вес – 82 кг ",
+                                    "Мощность – 2200 Вт ",
+                                    "Число оборотов – 460 об/мин",
+                                ],
+                                price: "от 1300 ₽/сутки"
+                            },
+                            {
+                                image: "/img/catalog/cat-13",
+                                name: "Компрессор поршневой REMEZA СБ4/Ф-270 LB50",
+                                features: [
+                                    "Вес – 82 кг ",
+                                    "Мощность – 2200 Вт ",
+                                    "Число оборотов – 460 об/мин",
+                                ],
+                                price: "от 1300 ₽/сутки"
+                            },
+
+                        ]
+
+                    each item in list
+                        + card(item)
+
+                .catalog-cat__text
+                    .catalog-cat__text-content.edit-content
+                        p.
+                            Насосы и мотопомпы предназначены для перекачки жидкостей разной степени плотности. Представляют собой конструкцию, состоящую из насоса и дизельного, бензинового или электрического мотора. Работы с их использованием часто носят сезонный или разовый характер: откачка ям, осушение водоемов, подвальных помещений, карьеров и строительных площадок, перекачка жидких субстанций. Покупать оборудование ради нескольких дней использования не выгодно. В таком случае будет полезна аренда насоса.
+                .catalog-cat__text
+                    .catalog-cat__text-heading
+                        .icon: +icons("#ic_logo",40)
+                        .section-h2 Виды компрессоров и насосов
+                    .catalog-cat__text-content.edit-content
+                        p.
+                            Решение различных задач требует применения насосов с разными техническими параметрами. Прежде чем взять в прокат мотопомпу, стоит в полном объеме представлять все нюансы предстоящей работы: доступность жидкости, объем, степень загрязнения, температуру. Так, в зависимости от способа погружения, дренажные насосы бывают:
+                        ul
+                            li Погружные, которые во время работы должны полностью находиться под поверхностью жидкости. Такие мотопомпы способны производить откачку с глубины до 9 метров, при температуре не выше 40 градусов.
+                            li Наружные — могут быть мембранными и центробежными. Аренда этих насосов оправдана в случае, если невозможен прямой доступ к воде, например, при осушении подвалов или откачке сточных вод.
+                            li Полупогружные помпы полезны при перекачке жидкостей, имеющих температуру выше 80 градусов. Во время работы мотор насоса остается над поверхностью, что предохраняет его от перегрева.
+                .catalog-cat__text
+                    .catalog-cat__text-heading
+                        .icon: +icons("#ic_logo",40)
+                        .section-h2 Предназначение
+                    .catalog-cat__text-content.edit-content
+                        p.
+                            Подлежащие перекачке субстанции могут иметь разную плотность, кислотность и степень загрязненности, включения в виде песка и камней. Для того чтобы не повредить мотопомпу во время эксплуатации и достичь запланированного результата, стоит выбрать для проката оптимально подходящую модель:
+                        ul
+                            li Для чистой воды предназначены насосы с мелкоячеистым фильтром, который может быть поврежден даже мелким мусором.
+                            li Для слабозагрязненной воды, например пожарные помпы. Способны качать воду из колодцев и относительно чистых водоемов.
+                            li Для грязной воды и непосредственно грязи. Наиболее мощная и габаритная техника. Ее берут в аренду для откачки септиков, осушения водоемов и строительных объектов.
+                            li Для агрессивных жидкостей, например щелочей, удобрений, морской воды, нефтепродуктов. Такие агрегаты изготавливают с применением специальных, устойчивых к агрессивным средам материалов.
+                        p.
+                            Арендовать нужную технику с подходящими техническими характеристиками возможно у нас в Санкт-Петербурге. Оборудование находится в рабочем состоянии, исправно и безопасно.
+
+
+block scripts
+    script(src="js/main.js")
+    script(src="js/catalog.js")

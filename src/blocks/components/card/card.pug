@@ -1,17 +1,17 @@
 mixin card(item)
     .product-card
-        .product-card__image
+        a(href="catalog-detail.html").product-card__image
             picture
                 source(srcset=item.image + ".webp" type="image/webp")
                 img.lazyload(loading="lazy" data-src=!item.image + ".png")
-        .product-card__name=item.name
+        a(href="catalog-detail.html").product-card__name=item.name
         ul.product-card__features
             each i in item.features
                 li=i
         .product-card__actions
             .product-card__rent
                 .price=item.price
-                a(href="#").btn.btn_primary Арендовать
+                a(href="catalog-detail.html").btn.btn_primary Арендовать
             .product-card__favorites
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="#E6E6E6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>

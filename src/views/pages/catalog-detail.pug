@@ -1,0 +1,243 @@
+extends ../layouts/default
+include ../helpers/mixins
+include ../../blocks/components/breadcrumbs/breadcrumbs.pug
+include ../../blocks/components/form/form.pug
+include ../../blocks/components/checkbox/checkbox.pug
+include ../../blocks/components/headers/headers.pug
+include ../../blocks/components/table/table.pug
+include ../../blocks/components/popup/popup.pug
+include ../../blocks/components/card/card
+
+block variables
+    - const title = "Мотопомпа Wacker Neuson MDP-3"
+
+block styles
+    link(rel="stylesheet" href="styles/catalog-detail.css")
+
+block content
+
+    .page-breadcrumbs
+        .container
+            +breadcrumb([
+                {
+                    link: "/",
+                    text: "Главная"
+                },
+                {
+                    link: "/catalog.html",
+                    text: "Каталог",
+                },
+                {
+                    link: "/catalog-category.html",
+                    text: "Компрессоры и насосы",
+                },
+                {
+                    link: "/catalog-subcategory.html",
+                    text: "Мотопомпы",
+                },
+                {
+                    link: "/catalog-detail.html",
+                    text: "Мотопомпа Wacker Neuson MDP-3",
+                    isActive: true,
+                }
+            ])
+
+
+    .page-title
+        .container
+            h1.section-h1.page-title__heading Мотопомпа Wacker Neuson MDP-3
+
+
+    section.product
+        .container
+            .product-image
+                .product-image__wrapper
+                    picture
+                        source(srcset="img/card/product.webp" type="image/webp")
+                        img(src="img/card/product.png" width=240 height=240)
+            .product-info
+                .product-info__features
+                    .product-info__title Характеристики
+                    ul.product-info__list.product-info__features-list
+                        li
+                            span.name Вес
+                            span.value 64 кг
+                        li
+                            span.name Мощность
+                            span.value 5,8 кВт
+                        li
+                            span.name Обьем бака
+                            span.value 3,6
+                        li
+                            span.name Габариты
+                            span.value 562x455x472 мм
+                        li
+                            span.name Производительность
+                            span.value 1300 л/мин
+                        li
+                            span.name Высота подъема
+                            span.value 26 м
+                        li
+                            span.name Высота всасывания
+                            span.value 8 м
+                .product-info__rent
+                    .product-info__rent-details
+                        .product-info__title Аренда
+                        ul.product-info__list.product-info__details-list
+                            li
+                                span.name Сутки
+                                span.value <strong>2000 ₽</strong>
+                            li
+                                span.name 2-7 сут
+                                span.value <strong>1900 ₽</strong>
+                            li
+                                span.name 8-14 сут
+                                span.value <strong>1700 ₽</strong>
+                            li
+                                span.name Более 15 сут
+                                span.value <strong>1500 ₽</strong>
+                    .product-info__rent-form
+                        .product-info__title Количество дней
+                        .caption В зависимости от кол-ва дней цена может меняться
+                        form.form
+                            .form__field
+                                .input.input-number
+                                    span.input-number__controls.input-number__dec
+                                        <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1H15" stroke="#888888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    input(type="number" min=1 value=1)
+                                    span.input-number__controls.input-number__inc
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 1V15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M1 8L15 8" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                            .form__submit
+                                button.btn.btn_primary заказать на 2000 ₽
+                .product-info__actions
+                    a(href="#").product-info__action.add-favorite
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="#E6E6E6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                        span Отложить товар
+                    a(href="#").product-info__action.question Вопрос по товару
+
+
+
+    .advantages-block
+        .container
+            .advantages-block__items
+                .advantages-block__item
+                    .icon: img.lazyload(loading="lazy" data-src="/img/card/ad-1.svg" width=64 height=64)
+                    .caption Более 200 единиц оборудования
+                .advantages-block__item
+                    .icon: img.lazyload(loading="lazy" data-src="/img/card/ad-2.svg" width=64 height=64)
+                    .caption Доставка за 60 минут
+                .advantages-block__item
+                    .icon: img.lazyload(loading="lazy" data-src="/img/card/ad-3.svg" width=64 height=64)
+                    .caption Минимальный залог
+                .advantages-block__item
+                    .icon: img.lazyload(loading="lazy" data-src="/img/card/ad-4.svg" width=64 height=64)
+                    .caption Скидки за аренду
+
+    .info-block
+        .container
+            .info-block__toggles
+                .info-block__toggle.is-active(data-tab="1") Описание
+                .info-block__toggle(data-tab="2") Условия аренды
+            .info-block__contents
+                .info-block__content.is-active(data-tab="1")
+                    p Мотопомпа HONDA WT-20X. Модель, разработана для перекачки грязной, заиленной воды при интенсивной эксплуатации в экстремальных условиях. Имеет производительность 650 литров в минуту и высоту подъёма до 30 метров. Мотопомпа способна перекачивать частицы размером до 30 мм. Крепкий защитный каркас, большая мощность двигателя и двойной корпус насоса делают устройство особо прочным и надежным. Насос предназначен для профессионального использования. Это оборудование оснащено профессиональными двигателями Honda OHV с автоматическим аварийным остановом при низком уровне масла.
+                .info-block__content(data-tab="2")
+                    ul.main-conditions__items
+                        li.main-conditions__item
+                            .icon: img.lazyload(data-src="img/svg/ic_step-1.svg" width=64 height=64 loading="lazy")
+                            .caption <strong>Связаться</strong> с нами по телефону или отправить заявку на нашем сайте
+                        li.main-conditions__item
+                            .icon: img.lazyload(data-src="img/svg/ic_step-2.svg" width=64 height=64 loading="lazy")
+                            .caption <strong>Приехать к нам</strong> в офис или склад для заключения договора и получения оборудования
+                        li.main-conditions__item
+                            .icon: img.lazyload(data-src="img/svg/ic_step-3.svg" width=64 height=64 loading="lazy")
+                            .caption Предъявить <strong>паспорт</strong> и заключить договор или внести небольшой денежный <strong>залог</strong> при отсутствии паспорта
+                        li.main-conditions__item
+                            .icon: img.lazyload(data-src="img/svg/ic_step-4.svg" width=64 height=64 loading="lazy")
+                            .caption После заключения договора и оплаты <strong>забрать оборудование</strong> на необходимый срок
+    -
+        var list = [
+            {
+                image: "/img/products/1",
+                name: "Шлифовальная машина МИСОМ СО-206.1А",
+                features: [
+                    "Вес – 82 кг ",
+                    "Мощность – 2200 Вт ",
+                    "Число оборотов – 460 об/мин"
+                ],
+                price: "от 1300 ₽/сутки"
+            },
+            {
+                image: "/img/products/2",
+                name: "Штроборез Makita SG1250",
+                features: [
+                    "Диаметр диска – 125 мм",
+                    "Вес – 4.1 кг",
+                    "Мощность – 1400 Вт"
+                ],
+                price: "от 1300 ₽/сутки"
+            },
+            {
+                image: "/img/products/3",
+                name: "Бензорез Husqvarna K760",
+                features: [
+                    "Вес – 9,6 кг",
+                    "Мощность – 3,7 кВт",
+                    "Глубина пропила – 125 мм"
+                ],
+                price: "от 2000 ₽/сутки"
+            },
+            {
+                image: "/img/products/4",
+                name: "Фрезеровальная машина по бетону Schwamborn BEF203",
+                features: [
+                    "Вес – 82 кг ",
+                    "Мощность – 2200 Вт ",
+                    "Число оборотов – 460 об/мин"
+                ],
+                price: "от 1000 ₽/сутки"
+            },
+            {
+                image: "/img/products/4",
+                name: "Фрезеровальная машина по бетону Schwamborn BEF203",
+                features: [
+                    "Вес – 82 кг ",
+                    "Мощность – 2200 Вт ",
+                    "Число оборотов – 460 об/мин"
+                ],
+                price: "от 1000 ₽/сутки"
+            },
+        ]
+
+    section.main-rent.card-rent
+        .container
+            .main-rent__heading
+                .icon: +icons('#ic_logo', 40)
+                .section-h2 С этим товаром арендуют
+            .main-rent__slider.splide
+                .splide__track
+                    ul.splide__list
+                        each item in list
+                            li.splide__slide.main-rent__slide
+                                +card(item)
+                .splide__arrows.main-rent__arrows
+                    button.splide__arrow.splide__arrow--prev
+                        <svg width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 25L1 13L13 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    button.splide__arrow.splide__arrow--next
+                        <svg width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 25L13 13L1 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+
+
+block scripts
+    script(src="js/main.js")
+    script(src="js/catalog-detail.js")

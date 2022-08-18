@@ -1,0 +1,157 @@
+extends ../layouts/default
+include ../helpers/mixins
+include ../../blocks/components/breadcrumbs/breadcrumbs.pug
+include ../../blocks/components/form/form.pug
+include ../../blocks/components/checkbox/checkbox.pug
+include ../../blocks/components/headers/headers.pug
+include ../../blocks/components/table/table.pug
+include ../../blocks/components/popup/popup.pug
+
+
+block variables
+    - const title = "Каталог"
+
+block styles
+    link(rel="stylesheet" href="styles/catalog.css")
+block content
+
+    .page-breadcrumbs
+        .container
+            +breadcrumb([
+                {
+                    link: "/",
+                    text: "Главная"
+                },
+                {
+                    link: "/catalog.html",
+                    text: "Каталог",
+                    isActive: true,
+                }
+            ])
+
+    .page-title
+        .container
+            h1.section-h1.page-title__heading Каталог оборудования
+
+    section.catalog
+        .container
+            ul.main-catalog__items
+                li.main-catalog__item
+                    .main-catalog__image
+                        picture
+                            source(srcset="img/common/img_01-7.webp" type="image/webp")
+                            img.lazyload(data-src="img/common/img_01-7.jpg" loading="lazy")
+                    a(href="catalog-category.html").main-catalog__title Электроинструменты
+                    ul.main-catalog__submenu
+                        li: a(href='catalog-subcategory.html') Отбойные молотки
+                        li: a(href='catalog-subcategory.html') Перфораторы
+                        li: a(href='catalog-subcategory.html') Ножницы по металлу
+                        li: a(href='catalog-subcategory.html') Штроборезы
+                        li: a(href='catalog-subcategory.html') Монтажные пилы
+                        li: a(href='catalog-subcategory.html') Торцовочные пилы
+                        li: a(href='catalog-subcategory.html') Циркулярные пилы
+                        li: a(href='catalog-subcategory.html') Сабельные пилы
+                        li: a(href='catalog-subcategory.html') УШМ
+                        li: a(href='catalog-subcategory.html') Краскопульты
+                        li: a(href='catalog-subcategory.html') Электрорубанки
+                        li: a(href='catalog-subcategory.html') Электролобзики
+                        li: a(href='catalog-subcategory.html') Шуруповерты
+                li.main-catalog__item
+                    .main-catalog__image
+                        picture
+                            source(srcset="img/common/img_01.webp" type="image/webp")
+                            img.lazyload(data-src="img/common/img_01.jpg" loading="lazy")
+                    a(href="catalog-category.html").main-catalog__title Оборудование для работ с бетоном
+                    ul.main-catalog__submenu
+                        li: a(href='catalog-subcategory.html') Виброрейка
+                        li: a(href='catalog-subcategory.html') Бетономешалка
+                        li: a(href='catalog-subcategory.html') Глубинный вибратор
+                        li: a(href='catalog-subcategory.html') Миксер
+                        li: a(href='catalog-subcategory.html') Оборудование для обогрева бетона
+                        li: a(href='catalog-subcategory.html') Растворные емкости
+                        li: a(href='catalog-subcategory.html') Инструмент для вязки арматуры
+                        li: a(href='catalog-subcategory.html') Инструмент для резки арматуры
+                        li: a(href='catalog-subcategory.html') Инструмент для гибки арматуры (Армогибы)
+                        li: a(href='catalog-subcategory.html') Монолитные стойки
+                li.main-catalog__item
+                    .main-catalog__image
+                        picture
+                            source(srcset="img/common/img_01-1.webp" type="image/webp")
+                            img.lazyload(data-src="img/common/img_01-1.jpg" loading="lazy")
+                    a(href="catalog-category.html").main-catalog__title Компрессоры и насосы
+                    ul.main-catalog__submenu
+                        li: a(href="#") Дизельные компрессоры
+                        li: a(href="#") Электрические компрессоры
+                        li: a(href="#") Мотопомпы
+                        li: a(href="#") Погружные насосы
+                li.main-catalog__item
+                    .main-catalog__image
+                        picture
+                            source(srcset="img/common/img_01-2.webp" type="image/webp")
+                            img.lazyload(data-src="img/common/img_01-2.jpg" loading="lazy")
+                    a(href="catalog-category.html").main-catalog__title Электростанции
+                        ul.main-catalog__submenu
+                            li: a(href="#") Дизельные электростанции
+                            li: a(href="#") Бензиновые электростанции
+                li.main-catalog__item
+                    .main-catalog__image
+                        picture
+                            source(srcset="img/common/img_01-6.webp" type="image/webp")
+                            img.lazyload(data-src="img/common/img_01-6.jpg" loading="lazy")
+                    a(href="catalog-category.html").main-catalog__title Дорожно-строительная техника
+                    ul.main-catalog__submenu
+                        li: a(href='catalog-subcategory.html') Виброплиты
+                        li: a(href='catalog-subcategory.html') Вибротрамбовки
+                        li: a(href='catalog-subcategory.html') Резчики швов
+                        li: a(href='catalog-subcategory.html') Бензорезы
+                        li: a(href='catalog-subcategory.html') Воздуходувка
+                        li: a(href='catalog-subcategory.html') Виброкатки
+                        li: a(href='catalog-subcategory.html') Осветительные мачты
+                        li: a(href='catalog-subcategory.html') Бензиновые отбойные молотки
+
+                li.main-catalog__item
+                    .main-catalog__image
+                        picture
+                            source(srcset="img/common/img_01-5.webp" type="image/webp")
+                            img.lazyload(data-src="img/common/img_01-5.jpg" loading="lazy")
+                    a(href="catalog-category.html").main-catalog__title Садовый инструмент
+                    ul.main-catalog__submenu
+                        li: a(href='catalog-subcategory.html') Снегоуборочные машины
+                        li: a(href='catalog-subcategory.html') Бензопилы
+                        li: a(href='catalog-subcategory.html') Культиваторы и мотоблоки
+                        li: a(href='catalog-subcategory.html') Триммеры
+                        li: a(href='catalog-subcategory.html') Газонокосилки
+                        li: a(href='catalog-subcategory.html') Монтажные пилы
+                        li: a(href='catalog-subcategory.html') Монтажные пилы
+                        li: a(href='catalog-subcategory.html') Монтажные пилы
+                li.main-catalog__item
+                    .main-catalog__image
+                        picture
+                            source(srcset="img/common/img_01-4.webp" type="image/webp")
+                            img.lazyload(data-src="img/common/img_01-4.jpg" loading="lazy")
+                    a(href="catalog-category.html").main-catalog__title Шлифовальное оборудование
+                    ul.main-catalog__submenu
+                        li: a(href='catalog-subcategory.html') Мозаично-шлифовальные машины
+                        li: a(href='catalog-subcategory.html') Паркето-шлифовальные машины
+                        li: a(href='catalog-subcategory.html') Затирочные машины по бетону
+                        li: a(href='catalog-subcategory.html') Эксцентриковые шлифовальные машины
+                        li: a(href='catalog-subcategory.html') Ленточно-шлифовальные машины
+                        li: a(href='catalog-subcategory.html') Шлифовальные машины для стен
+                        li: a(href='catalog-subcategory.html') Фрезеровальные машины по бетону
+                        li: a(href='catalog-subcategory.html') Строгальные машины
+
+                li.main-catalog__item
+                    .main-catalog__image
+                        picture
+                            source(srcset="img/common/img_01-3.webp" type="image/webp")
+                            img.lazyload(data-src="img/common/img_01-3.jpg" loading="lazy")
+                    a(href="catalog-category.html").main-catalog__title Леса и опалубки
+                        ul.main-catalog__submenu
+                            li: a(href='catalog-subcategory.html') Строительные леса
+                            li: a(href='catalog-subcategory.html') Вышки тура
+                            li: a(href='catalog-subcategory.html') Лестницы и стремянки
+                            li: a(href='catalog-subcategory.html') Опалубка
+                            li: a(href='catalog-subcategory.html') Сетка для строительных лесов
+                            li: a(href='catalog-subcategory.html') Рукав для мусора
+block scripts
+    script(src="js/main.js")

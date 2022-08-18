@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Аренда мотопомпы</title>
+    <meta name="theme-color" content="#000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="stylesheet" href="styles/main.min.css">
+  </head>
+  <link rel="stylesheet" href="styles/catalog.min.css">
+  <body class="page page_noanimation">
+    <header class="header">
+      <div class="header-top">
+        <div class="container"><a class="header-top__logo" href="/">
+            <picture>
+              <source srcset="img/common/logo-full.svg" media="(min-width: 768px)"><img src="img/common/logo.svg">
+            </picture></a>
+          <div class="header-top__caption">Оказываем услуги по прокату стройоборудования</div>
+          <div class="header-top__phones"><a class="header-top__phone" href="tel:8009555566"><small>(800)&nbsp;</small><span>955-55-66</span></a><a class="header-top__phone" href="tel:8009555566"><small>(800)&nbsp;</small><span>955-55-66</span><span class="icon">
+                <svg width="20" height="20">
+                  <use xlink:href="/img/sprites/sprite.svg#ic_viber"></use>
+                </svg></span></a></div>
+          <div class="header-top__call"><a class="btn btn_secondary" href="#callback"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13 2V7H18" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M19 1L13 7" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16.9995 14.9791V17.3877C17.0004 17.6113 16.9545 17.8327 16.8648 18.0375C16.775 18.2424 16.6434 18.4263 16.4783 18.5775C16.3132 18.7286 16.1183 18.8437 15.906 18.9154C15.6938 18.987 15.4689 19.0136 15.2457 18.9935C12.7702 18.725 10.3923 17.8808 8.30312 16.5286C6.35937 15.2959 4.71141 13.6512 3.47627 11.7113C2.11669 9.61679 1.27059 7.23206 1.00653 4.75036C0.986426 4.52834 1.01286 4.30457 1.08416 4.0933C1.15546 3.88203 1.27005 3.6879 1.42065 3.52325C1.57124 3.35861 1.75454 3.22706 1.95886 3.13699C2.16319 3.04691 2.38407 3.00029 2.60744 3.00008H5.02086C5.41128 2.99624 5.78977 3.13422 6.0858 3.3883C6.38182 3.64237 6.57517 3.99521 6.62981 4.38103C6.73168 5.15185 6.92059 5.9087 7.19295 6.63713C7.30118 6.9245 7.32461 7.23682 7.26045 7.53707C7.19629 7.83732 7.04723 8.11292 6.83093 8.33121L5.80925 9.35087C6.95446 11.3609 8.62206 13.0252 10.6361 14.1682L11.6578 13.1485C11.8765 12.9326 12.1527 12.7839 12.4535 12.7198C12.7544 12.6558 13.0673 12.6792 13.3552 12.7872C14.0851 13.059 14.8435 13.2476 15.6158 13.3492C16.0066 13.4042 16.3635 13.6007 16.6186 13.9012C16.8737 14.2017 17.0093 14.5853 16.9995 14.9791Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg><span>Заказать звонок</span></a></div>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="container">
+          <div class="header-bottom__catalog">
+            <div class="toggle">
+              <div class="toggle-expand">
+                <svg width="24" height="24">
+                  <use xlink:href="/img/sprites/sprite.svg#ic_catalog"></use>
+                </svg>
+              </div>
+              <div class="toggle-collapse">
+                <svg width="24" height="24">
+                  <use xlink:href="/img/sprites/sprite.svg#ic_catalog-close"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="caption">Каталог</div>
+          </div>
+          <nav class="header-bottom__nav">
+            <ul>
+              <li><a href="catalog-subcategory.html">Условия работы</a></li>
+              <li><a href="catalog-subcategory.html">Доставка и оплата</a></li>
+              <li><a href="catalog-subcategory.html">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="header-bottom__search">
+            <svg width="24" height="24">
+              <use xlink:href="/img/sprites/sprite.svg#ic_search"></use>
+            </svg>
+          </div><a class="header-bottom__favorites" href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" id="ic_fav"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <form class="header-bottom__form form">
+            <div class="form__field">
+              <div class="input input_search input_icon">
+                <div class="input_icon__wrap"><span class="icon">
+                    <svg width="24" height="24">
+                      <use xlink:href="/img/sprites/sprite.svg#ic_search"></use>
+                    </svg></span>
+                  <input type="search" placeholder="Найти оборудование">
+                </div>
+              </div>
+            </div>
+            <div class="header-bottom__form-close"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.7">
+<path d="M18 6L6 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6 6L18 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>
+            </div>
+          </form>
+          <div class="header-bottom__dropdown">
+            <div class="header-bottom__dropdown-section">
+              <div class="caption">Каталог:</div>
+              <ul class="list-items">
+                <li class="list-items__item">
+                  <div class="list-items__image">
+                    <picture>
+                      <source srcset="img/common/img_01-7.webp" type="image/webp"><img class="lazyload" data-src="img/common/img_01-7.jpg" loading="lazy">
+                    </picture>
+                  </div><a class="list-items__title" href="catalog-category.html">Электроинструменты</a>
+                  <ul class="list-items__submenu">
+                    <li><a href="catalog-subcategory.html">Отбойные молотки</a></li>
+                    <li><a href="catalog-subcategory.html">Перфораторы</a></li>
+                    <li><a href="catalog-subcategory.html">Ножницы по металлу</a></li>
+                    <li><a href="catalog-subcategory.html">Штроборезы</a></li>
+                    <li><a href="catalog-subcategory.html">Монтажные пилы</a></li>
+                    <li class="hidden"><a href="#">Монтажные пилы</a></li>
+                  </ul>
+                </li>
+                <li class="list-items__item">
+                  <div class="list-items__image">
+                    <picture>
+                      <source srcset="img/common/img_01.webp" type="image/webp"><img class="lazyload" data-src="img/common/img_01.jpg" loading="lazy">
+                    </picture>
+                  </div><a class="list-items__title" href="catalog-category.html">Оборудование для работ с бетоном</a>
+                  <ul class="list-items__submenu">
+                    <li><a href="catalog-subcategory.html">Виброрейка</a></li>
+                    <li><a href="catalog-subcategory.html">Бетономешалка</a></li>
+                    <li><a href="catalog-subcategory.html">Глубинный вибратор</a></li>
+                    <li><a href="catalog-subcategory.html">Миксер</a></li>
+                    <li><a href="catalog-subcategory.html">Инструмент для гибки арматуры (Армогибы)</a></li>
+                  </ul>
+                </li>
+                <li class="list-items__item">
+                  <div class="list-items__image">
+                    <picture>
+                      <source srcset="img/common/img_01-1.webp" type="image/webp"><img class="lazyload" data-src="img/common/img_01-1.jpg" loading="lazy">
+                    </picture>
+                  </div><a class="list-items__title" href="catalog-category.html">Компрессоры и насосы</a>
+                  <ul class="list-items__submenu">
+                    <li><a href="catalog-subcategory.html">Дизельные компрессоры</a></li>
+                    <li><a href="catalog-subcategory.html">Электрические компрессоры</a></li>
+                    <li><a href="catalog-subcategory.html">Мотопомпы</a></li>
+                    <li><a href="catalog-subcategory.html">Погружные насосы</a></li>
+                  </ul>
+                </li>
+                <li class="list-items__item">
+                  <div class="list-items__image">
+                    <picture>
+                      <source srcset="img/common/img_01-2.webp" type="image/webp"><img class="lazyload" data-src="img/common/img_01-2.jpg" loading="lazy">
+                    </picture>
+                  </div><a class="list-items__title" href="catalog-category.html">Электростанции
+                    <ul class="list-items__submenu">
+                      <li><a href="catalog-subcategory.html">Дизельные электростанции</a></li>
+                      <li><a href="catalog-subcategory.html">Бензиновые электростанции</a></li>
+                    </ul></a>
+                </li>
+                <li class="list-items__item hidden">
+                  <div class="list-items__image">
+                    <picture>
+                      <source srcset="img/common/img_01-6.webp" type="image/webp"><img class="lazyload" data-src="img/common/img_01-6.jpg" loading="lazy">
+                    </picture>
+                  </div><a class="list-items__title" href="catalog-category.html">Электроинструменты</a>
+                  <ul class="list-items__submenu">
+                    <li><a href="catalog-subcategory.html">Отбойные молотки</a></li>
+                    <li><a href="catalog-subcategory.html">Перфораторы</a></li>
+                    <li><a href="catalog-subcategory.html">Ножницы по металлу</a></li>
+                    <li><a href="catalog-subcategory.html">Штроборезы</a></li>
+                    <li><a href="catalog-subcategory.html">Монтажные пилы</a></li>
+                  </ul>
+                </li>
+                <li class="list-items__item hidden">
+                  <div class="list-items__image">
+                    <picture>
+                      <source srcset="img/common/img_01-5.webp" type="image/webp"><img class="lazyload" data-src="img/common/img_01-5.jpg" loading="lazy">
+                    </picture>
+                  </div><a class="list-items__title" href="catalog-category.html">Оборудование для работ с бетоном</a>
+                  <ul class="list-items__submenu">
+                    <li><a href="catalog-subcategory.html">Виброрейка</a></li>
+                    <li><a href="catalog-subcategory.html">Бетономешалка</a></li>
+                    <li><a href="catalog-subcategory.html">Глубинный вибратор</a></li>
+                    <li><a href="catalog-subcategory.html">Миксер</a></li>
+                    <li><a href="catalog-subcategory.html">Инструмент для гибки арматуры (Армогибы)</a></li>
+                  </ul>
+                </li>
+                <li class="list-items__item hidden">
+                  <div class="list-items__image">
+                    <picture>
+                      <source srcset="img/common/img_01-4.webp" type="image/webp"><img class="lazyload" data-src="img/common/img_01-4.jpg" loading="lazy">
+                    </picture>
+                  </div><a class="list-items__title" href="catalog-category.html">Компрессоры и насосы</a>
+                  <ul class="list-items__submenu">
+                    <li><a href="catalog-subcategory.html">Дизельные компрессоры</a></li>
+                    <li><a href="catalog-subcategory.html">Электрические компрессоры</a></li>
+                    <li><a href="catalog-subcategory.html">Мотопомпы</a></li>
+                    <li><a href="catalog-subcategory.html">Погружные насосы</a></li>
+                  </ul>
+                </li>
+                <li class="list-items__item hidden">
+                  <div class="list-items__image">
+                    <picture>
+                      <source srcset="img/common/img_01-3.webp" type="image/webp"><img class="lazyload" data-src="img/common/img_01-3.jpg" loading="lazy">
+                    </picture>
+                  </div><a class="list-items__title" href="catalog-category.html">Электростанции
+                    <ul class="list-items__submenu">
+                      <li><a href="catalog-subcategory.html">Дизельные электростанции</a></li>
+                      <li><a href="catalog-subcategory.html">Бензиновые электростанции</a></li>
+                    </ul></a>
+                </li>
+              </ul>
+              <button class="all-btn" data-title-expand="Весь каталог" data-title-hide="Скрыть"><span>Весь каталог</span>
+                <svg width="20" height="20">
+                  <use xlink:href="/img/sprites/sprite.svg#ic_chevron-down"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="header-bottom__dropdown-section info">
+              <div class="caption">Информация:</div>
+              <ul class="list-items">
+                <li class="list-items__item"><a class="list-items__title" href="#">Условия работы</a></li>
+                <li class="list-items__item"><a class="list-items__title" href="#">Доставка и оплата</a></li>
+                <li class="list-items__item"><a class="list-items__title" href="#">Контакты</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="page-breadcrumbs">
+        <div class="container">
+          <div class="breadcrumb">
+            <ul class="breadcrumb__list">
+              <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Главная</a></li>
+              <li class="breadcrumb__item"><a class="breadcrumb__link" href="/catalog.html">Каталог</a></li>
+              <li class="breadcrumb__item"><a class="breadcrumb__link" href="/catalog-category.html">Компрессоры и насосы</a></li>
+              <li class="breadcrumb__item"><a class="breadcrumb__link breadcrumb__link_active" href="/catalog-subcategory.html">Мотопомпы</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="page-title">
+        <div class="container">
+          <h1 class="section-h1 page-title__heading">Аренда мотопомпы</h1>
+        </div>
+      </div>
+      <section class="catalog-cat">
+        <div class="container">
+          <div class="catalog-cat__sidebar">
+            <ul class="catalog-cat__sections">
+              <li class="catalog-cat__section"><a class="name" href="#">Электроинструменты</a><span class="toggle"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.70711 8.29289C6.31658 7.90237 5.68342 7.90237 5.29289 8.29289C4.90237 8.68342 4.90237 9.31658 5.29289 9.70711L6.70711 8.29289ZM12 15L11.2929 15.7071C11.6834 16.0976 12.3166 16.0976 12.7071 15.7071L12 15ZM18.7071 9.70711C19.0976 9.31658 19.0976 8.68342 18.7071 8.29289C18.3166 7.90237 17.6834 7.90237 17.2929 8.29289L18.7071 9.70711ZM5.29289 9.70711L11.2929 15.7071L12.7071 14.2929L6.70711 8.29289L5.29289 9.70711ZM12.7071 15.7071L18.7071 9.70711L17.2929 8.29289L11.2929 14.2929L12.7071 15.7071Z" fill="black"/>
+</svg>
+</span>
+                <ul class="list">
+                  <li><a href="#">Отбойные молотки</a></li>
+                  <li><a href="#">Перфораторы</a></li>
+                  <li><a href="#">Ножницы по металлу</a></li>
+                  <li><a href="#">Штроборезы</a></li>
+                  <li><a href="#">Монтажные пилы</a></li>
+                  <li><a href="#">Торцовочные пилы</a></li>
+                  <li><a href="#">Циркулярные пилы</a></li>
+                  <li><a href="#">Сабельные пилы</a></li>
+                  <li><a href="#">УШМ</a></li>
+                  <li><a href="#">Краскопульты</a></li>
+                  <li><a href="#">Электрорубанки</a></li>
+                  <li><a href="#">Электролобзики</a></li>
+                  <li><a href="#">Шуруповерты</a></li>
+                </ul>
+              </li>
+              <li class="catalog-cat__section"><a class="name" href="#">Электростанции</a><span class="toggle"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.70711 8.29289C6.31658 7.90237 5.68342 7.90237 5.29289 8.29289C4.90237 8.68342 4.90237 9.31658 5.29289 9.70711L6.70711 8.29289ZM12 15L11.2929 15.7071C11.6834 16.0976 12.3166 16.0976 12.7071 15.7071L12 15ZM18.7071 9.70711C19.0976 9.31658 19.0976 8.68342 18.7071 8.29289C18.3166 7.90237 17.6834 7.90237 17.2929 8.29289L18.7071 9.70711ZM5.29289 9.70711L11.2929 15.7071L12.7071 14.2929L6.70711 8.29289L5.29289 9.70711ZM12.7071 15.7071L18.7071 9.70711L17.2929 8.29289L11.2929 14.2929L12.7071 15.7071Z" fill="black"/>
+</svg>
+</span>
+                <ul class="list">
+                  <li><a href="#">Дизельные электростанции</a></li>
+                  <li><a href="#">Бензиновые электростанции</a></li>
+                </ul>
+              </li>
+              <li class="catalog-cat__section is-active"><a class="name" href="#">Компрессоры и насосы</a><span class="toggle"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.70711 8.29289C6.31658 7.90237 5.68342 7.90237 5.29289 8.29289C4.90237 8.68342 4.90237 9.31658 5.29289 9.70711L6.70711 8.29289ZM12 15L11.2929 15.7071C11.6834 16.0976 12.3166 16.0976 12.7071 15.7071L12 15ZM18.7071 9.70711C19.0976 9.31658 19.0976 8.68342 18.7071 8.29289C18.3166 7.90237 17.6834 7.90237 17.2929 8.29289L18.7071 9.70711ZM5.29289 9.70711L11.2929 15.7071L12.7071 14.2929L6.70711 8.29289L5.29289 9.70711ZM12.7071 15.7071L18.7071 9.70711L17.2929 8.29289L11.2929 14.2929L12.7071 15.7071Z" fill="black"/>
+</svg>
+</span>
+                <ul class="list">
+                  <li><a href="#">Дизельные компрессоры</a></li>
+                  <li><a href="#">Электрические компрессоры</a></li>
+                  <li class="is-active"><a href="#">Мотопомпы</a></li>
+                  <li><a href="#">Погружные насосы</a></li>
+                </ul>
+              </li>
+              <li class="catalog-cat__section"><a class="name" href="#">Оборудование для работ с бетоном</a><span class="toggle"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.70711 8.29289C6.31658 7.90237 5.68342 7.90237 5.29289 8.29289C4.90237 8.68342 4.90237 9.31658 5.29289 9.70711L6.70711 8.29289ZM12 15L11.2929 15.7071C11.6834 16.0976 12.3166 16.0976 12.7071 15.7071L12 15ZM18.7071 9.70711C19.0976 9.31658 19.0976 8.68342 18.7071 8.29289C18.3166 7.90237 17.6834 7.90237 17.2929 8.29289L18.7071 9.70711ZM5.29289 9.70711L11.2929 15.7071L12.7071 14.2929L6.70711 8.29289L5.29289 9.70711ZM12.7071 15.7071L18.7071 9.70711L17.2929 8.29289L11.2929 14.2929L12.7071 15.7071Z" fill="black"/>
+</svg>
+</span>
+                <ul class="list">
+                  <li><a href="#">Виброрейка</a></li>
+                  <li><a href="#">Бетономешалка</a></li>
+                  <li><a href="#">Глубинный вибратор</a></li>
+                  <li><a href="#">Миксер</a></li>
+                  <li><a href="#">Оборудование для обогрева бетона</a></li>
+                  <li><a href="#">Растворные емкости</a></li>
+                  <li><a href="#">Инструмент для вязки арматуры</a></li>
+                  <li><a href="#">Инструмент для резки арматуры</a></li>
+                  <li><a href="#">Инструмент для гибки арматуры (Армогибы)</a></li>
+                  <li><a href="#">Монолитные стойки</a></li>
+                </ul>
+              </li>
+              <li class="catalog-cat__section"><a class="name" href="#">Оборудование для работ с бетоном</a><span class="toggle"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.70711 8.29289C6.31658 7.90237 5.68342 7.90237 5.29289 8.29289C4.90237 8.68342 4.90237 9.31658 5.29289 9.70711L6.70711 8.29289ZM12 15L11.2929 15.7071C11.6834 16.0976 12.3166 16.0976 12.7071 15.7071L12 15ZM18.7071 9.70711C19.0976 9.31658 19.0976 8.68342 18.7071 8.29289C18.3166 7.90237 17.6834 7.90237 17.2929 8.29289L18.7071 9.70711ZM5.29289 9.70711L11.2929 15.7071L12.7071 14.2929L6.70711 8.29289L5.29289 9.70711ZM12.7071 15.7071L18.7071 9.70711L17.2929 8.29289L11.2929 14.2929L12.7071 15.7071Z" fill="black"/>
+</svg>
+</span>
+                <ul class="list">
+                  <li><a href="#">Виброрейка</a></li>
+                  <li><a href="#">Бетономешалка</a></li>
+                  <li><a href="#">Глубинный вибратор</a></li>
+                  <li><a href="#">Миксер</a></li>
+                  <li><a href="#">Оборудование для обогрева бетона</a></li>
+                  <li><a href="#">Растворные емкости</a></li>
+                  <li><a href="#">Инструмент для вязки арматуры</a></li>
+                  <li><a href="#">Инструмент для резки арматуры</a></li>
+                  <li><a href="#">Инструмент для гибки арматуры (Армогибы)</a></li>
+                  <li><a href="#">Монолитные стойки</a></li>
+                </ul>
+              </li>
+              <li class="catalog-cat__section"><a class="name" href="#">Дорожно-строительная техника</a><span class="toggle"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.70711 8.29289C6.31658 7.90237 5.68342 7.90237 5.29289 8.29289C4.90237 8.68342 4.90237 9.31658 5.29289 9.70711L6.70711 8.29289ZM12 15L11.2929 15.7071C11.6834 16.0976 12.3166 16.0976 12.7071 15.7071L12 15ZM18.7071 9.70711C19.0976 9.31658 19.0976 8.68342 18.7071 8.29289C18.3166 7.90237 17.6834 7.90237 17.2929 8.29289L18.7071 9.70711ZM5.29289 9.70711L11.2929 15.7071L12.7071 14.2929L6.70711 8.29289L5.29289 9.70711ZM12.7071 15.7071L18.7071 9.70711L17.2929 8.29289L11.2929 14.2929L12.7071 15.7071Z" fill="black"/>
+</svg>
+</span>
+                <ul class="list">
+                  <li><a href="#">Виброплиты</a></li>
+                  <li><a href="#">Вибротрамбовки</a></li>
+                  <li><a href="#">Резчики швов</a></li>
+                  <li><a href="#">Бензорезы</a></li>
+                  <li><a href="#">Воздуходувка</a></li>
+                  <li><a href="#">Виброкатки</a></li>
+                  <li><a href="#">Осветительные мачты</a></li>
+                  <li><a href="#">Бензиновые отбойные молотки</a></li>
+                </ul>
+              </li>
+              <li class="catalog-cat__section"><a class="name" href="#">Садовый инструмент</a><span class="toggle"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.70711 8.29289C6.31658 7.90237 5.68342 7.90237 5.29289 8.29289C4.90237 8.68342 4.90237 9.31658 5.29289 9.70711L6.70711 8.29289ZM12 15L11.2929 15.7071C11.6834 16.0976 12.3166 16.0976 12.7071 15.7071L12 15ZM18.7071 9.70711C19.0976 9.31658 19.0976 8.68342 18.7071 8.29289C18.3166 7.90237 17.6834 7.90237 17.2929 8.29289L18.7071 9.70711ZM5.29289 9.70711L11.2929 15.7071L12.7071 14.2929L6.70711 8.29289L5.29289 9.70711ZM12.7071 15.7071L18.7071 9.70711L17.2929 8.29289L11.2929 14.2929L12.7071 15.7071Z" fill="black"/>
+</svg>
+</span>
+                <ul class="list">
+                  <li><a href="#">Снегоуборочные машины</a></li>
+                  <li><a href="#">Бензопилы</a></li>
+                  <li><a href="#">Культиваторы и мотоблоки</a></li>
+                  <li><a href="#">Триммеры</a></li>
+                  <li><a href="#">Газонокосилки</a></li>
+                  <li><a href="#">Монтажные пилы</a></li>
+                  <li><a href="#">Монтажные пилы</a></li>
+                  <li><a href="#">Монтажные пилы</a></li>
+                </ul>
+              </li>
+              <li class="catalog-cat__section"><a class="name" href="#">Шлифовальное оборудование</a><span class="toggle"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.70711 8.29289C6.31658 7.90237 5.68342 7.90237 5.29289 8.29289C4.90237 8.68342 4.90237 9.31658 5.29289 9.70711L6.70711 8.29289ZM12 15L11.2929 15.7071C11.6834 16.0976 12.3166 16.0976 12.7071 15.7071L12 15ZM18.7071 9.70711C19.0976 9.31658 19.0976 8.68342 18.7071 8.29289C18.3166 7.90237 17.6834 7.90237 17.2929 8.29289L18.7071 9.70711ZM5.29289 9.70711L11.2929 15.7071L12.7071 14.2929L6.70711 8.29289L5.29289 9.70711ZM12.7071 15.7071L18.7071 9.70711L17.2929 8.29289L11.2929 14.2929L12.7071 15.7071Z" fill="black"/>
+</svg>
+</span>
+                <ul class="list">
+                  <li><a href="#">Мозаично-шлифовальные машины</a></li>
+                  <li><a href="#">Паркето-шлифовальные машины</a></li>
+                  <li><a href="#">Затирочные машины по бетону</a></li>
+                  <li><a href="#">Эксцентриковые шлифовальные машины</a></li>
+                  <li><a href="#">Ленточно-шлифовальные машины</a></li>
+                  <li><a href="#">Шлифовальные машины для стен</a></li>
+                  <li><a href="#">Фрезеровальные машины по бетону</a></li>
+                  <li><a href="#">Строгальные машины</a></li>
+                </ul>
+              </li>
+              <li class="catalog-cat__section"><a class="name" href="#">Леса и опалубки</a><span class="toggle"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.70711 8.29289C6.31658 7.90237 5.68342 7.90237 5.29289 8.29289C4.90237 8.68342 4.90237 9.31658 5.29289 9.70711L6.70711 8.29289ZM12 15L11.2929 15.7071C11.6834 16.0976 12.3166 16.0976 12.7071 15.7071L12 15ZM18.7071 9.70711C19.0976 9.31658 19.0976 8.68342 18.7071 8.29289C18.3166 7.90237 17.6834 7.90237 17.2929 8.29289L18.7071 9.70711ZM5.29289 9.70711L11.2929 15.7071L12.7071 14.2929L6.70711 8.29289L5.29289 9.70711ZM12.7071 15.7071L18.7071 9.70711L17.2929 8.29289L11.2929 14.2929L12.7071 15.7071Z" fill="black"/>
+</svg>
+</span>
+                <ul class="list">
+                  <li><a href="#">Строительные леса</a></li>
+                  <li><a href="#">Вышки тура</a></li>
+                  <li><a href="#">Лестницы и стремянки</a></li>
+                  <li><a href="#">Опалубка</a></li>
+                  <li><a href="#">Сетка для строительных лесов</a></li>
+                  <li><a href="#">Рукав для мусора</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="catalog-cat__content">
+            <div class="catalog-cat__products">
+              <div class="product-card"><a class="product-card__image" href="catalog-detail.html">
+                  <picture>
+                    <source srcset="/img/catalog/cat-7.webp" type="image/webp"/><img class="lazyload" loading="lazy" data-src="false.png"/>
+                  </picture></a><a class="product-card__name" href="catalog-detail.html">Мотопомпа Wacker Neuson MDP-3</a>
+                <ul class="product-card__features">
+                  <li>Мощность – 86 кВт</li>
+                  <li>Производительность – 11,1 м3/мин</li>
+                  <li>Вес с шасси – 1900 кг</li>
+                </ul>
+                <div class="product-card__actions">
+                  <div class="product-card__rent">
+                    <div class="price">6000 ₽/сутки</div><a class="btn btn_primary" href="catalog-detail.html">Арендовать</a>
+                  </div>
+                  <div class="product-card__favorites"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="#E6E6E6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card"><a class="product-card__image" href="catalog-detail.html">
+                  <picture>
+                    <source srcset="/img/catalog/cat-8.webp" type="image/webp"/><img class="lazyload" loading="lazy" data-src="false.png"/>
+                  </picture></a><a class="product-card__name" href="catalog-detail.html">Мотопомпа Koshin KTH-50X</a>
+                <ul class="product-card__features">
+                  <li>Мощность – 36 кВт</li>
+                  <li>Производительность – 5,3 м3/мин</li>
+                  <li>Вес с шасси – 885 кг</li>
+                </ul>
+                <div class="product-card__actions">
+                  <div class="product-card__rent">
+                    <div class="price">4000 ₽/сутки</div><a class="btn btn_primary" href="catalog-detail.html">Арендовать</a>
+                  </div>
+                  <div class="product-card__favorites"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="#E6E6E6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card"><a class="product-card__image" href="catalog-detail.html">
+                  <picture>
+                    <source srcset="/img/catalog/cat-9.webp" type="image/webp"/><img class="lazyload" loading="lazy" data-src="false.png"/>
+                  </picture></a><a class="product-card__name" href="catalog-detail.html">Мотопомпа Champion GTP80</a>
+                <ul class="product-card__features">
+                  <li>Вес – 24 кг </li>
+                  <li>Мощность – 1800 Вт </li>
+                  <li>Напряжение – 220 В</li>
+                </ul>
+                <div class="product-card__actions">
+                  <div class="product-card__rent">
+                    <div class="price">от 1300 ₽/сутки</div><a class="btn btn_primary" href="catalog-detail.html">Арендовать</a>
+                  </div>
+                  <div class="product-card__favorites"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="#E6E6E6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card"><a class="product-card__image" href="catalog-detail.html">
+                  <picture>
+                    <source srcset="/img/catalog/cat-10.webp" type="image/webp"/><img class="lazyload" loading="lazy" data-src="false.png"/>
+                  </picture></a><a class="product-card__name" href="catalog-detail.html">Мотопомпа Makita EW1050HX</a>
+                <ul class="product-card__features">
+                  <li>Мощность – 86 кВт</li>
+                  <li>Производительность – 11,1 м3/мин</li>
+                  <li>Число оборотов – 460 об/мин</li>
+                </ul>
+                <div class="product-card__actions">
+                  <div class="product-card__rent">
+                    <div class="price">6000 ₽/сутки</div><a class="btn btn_primary" href="catalog-detail.html">Арендовать</a>
+                  </div>
+                  <div class="product-card__favorites"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="#E6E6E6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card"><a class="product-card__image" href="catalog-detail.html">
+                  <picture>
+                    <source srcset="/img/catalog/cat-11.webp" type="image/webp"/><img class="lazyload" loading="lazy" data-src="false.png"/>
+                  </picture></a><a class="product-card__name" href="catalog-detail.html">Диафрагменная мотопомпа Wacker Neuson PDI 3A</a>
+                <ul class="product-card__features">
+                  <li>Вес – 82 кг </li>
+                  <li>Мощность – 2200 Вт </li>
+                  <li>Число оборотов – 460 об/мин</li>
+                </ul>
+                <div class="product-card__actions">
+                  <div class="product-card__rent">
+                    <div class="price">4000 ₽/сутки</div><a class="btn btn_primary" href="catalog-detail.html">Арендовать</a>
+                  </div>
+                  <div class="product-card__favorites"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="#E6E6E6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="catalog-cat__text">
+              <div class="catalog-cat__text-content edit-content">
+                <p>Насосы и мотопомпы предназначены для перекачки жидкостей разной степени плотности. Представляют собой конструкцию, состоящую из насоса и дизельного, бензинового или электрического мотора. Работы с их использованием часто носят сезонный или разовый характер: откачка ям, осушение водоемов, подвальных помещений, карьеров и строительных площадок, перекачка жидких субстанций. Покупать оборудование ради нескольких дней использования не выгодно. В таком случае будет полезна аренда насоса.</p>
+              </div>
+            </div>
+            <div class="catalog-cat__text">
+              <div class="catalog-cat__text-heading">
+                <div class="icon">
+                  <svg width="40" height="40">
+                    <use xlink:href="/img/sprites/sprite.svg#ic_logo"></use>
+                  </svg>
+                </div>
+                <div class="section-h2">Виды компрессоров и насосов</div>
+              </div>
+              <div class="catalog-cat__text-content edit-content">
+                <p>Решение различных задач требует применения насосов с разными техническими параметрами. Прежде чем взять в прокат мотопомпу, стоит в полном объеме представлять все нюансы предстоящей работы: доступность жидкости, объем, степень загрязнения, температуру. Так, в зависимости от способа погружения, дренажные насосы бывают:</p>
+                <ul>
+                  <li>Погружные, которые во время работы должны полностью находиться под поверхностью жидкости. Такие мотопомпы способны производить откачку с глубины до 9 метров, при температуре не выше 40 градусов.</li>
+                  <li>Наружные — могут быть мембранными и центробежными. Аренда этих насосов оправдана в случае, если невозможен прямой доступ к воде, например, при осушении подвалов или откачке сточных вод.</li>
+                  <li>Полупогружные помпы полезны при перекачке жидкостей, имеющих температуру выше 80 градусов. Во время работы мотор насоса остается над поверхностью, что предохраняет его от перегрева.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="catalog-cat__text">
+              <div class="catalog-cat__text-heading">
+                <div class="icon">
+                  <svg width="40" height="40">
+                    <use xlink:href="/img/sprites/sprite.svg#ic_logo"></use>
+                  </svg>
+                </div>
+                <div class="section-h2">Предназначение</div>
+              </div>
+              <div class="catalog-cat__text-content edit-content">
+                <p>Подлежащие перекачке субстанции могут иметь разную плотность, кислотность и степень загрязненности, включения в виде песка и камней. Для того чтобы не повредить мотопомпу во время эксплуатации и достичь запланированного результата, стоит выбрать для проката оптимально подходящую модель:</p>
+                <ul>
+                  <li>Для чистой воды предназначены насосы с мелкоячеистым фильтром, который может быть поврежден даже мелким мусором.</li>
+                  <li>Для слабозагрязненной воды, например пожарные помпы. Способны качать воду из колодцев и относительно чистых водоемов.</li>
+                  <li>Для грязной воды и непосредственно грязи. Наиболее мощная и габаритная техника. Ее берут в аренду для откачки септиков, осушения водоемов и строительных объектов.</li>
+                  <li>Для агрессивных жидкостей, например щелочей, удобрений, морской воды, нефтепродуктов. Такие агрегаты изготавливают с применением специальных, устойчивых к агрессивным средам материалов.</li>
+                </ul>
+                <p>
+                  Арендовать нужную технику с подходящими техническими характеристиками возможно у нас в Санкт-Петербурге. Оборудование находится в рабочем состоянии, исправно и безопасно.
+                  
+                  
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="scroll-top"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 16L12 8L4 16" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+    </div>
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-top__content">
+            <div class="footer-top__info">
+              <div class="footer-top__logo"><img class="lazyload" loading="lazy" data-src="img/common/logo-full.svg" width="184" height="38"></div>
+              <div class="footer-top__desc">Оказываем услуги по прокату строительного оборудования, инструментов и расходников</div>
+              <ul class="footer-top__socials">
+                <li><a href="#">
+                    <svg width="18" height="18">
+                      <use xlink:href="/img/sprites/sprite.svg#ic_vk"></use>
+                    </svg></a></li>
+                <li><a href="#">
+                    <svg width="18" height="18">
+                      <use xlink:href="/img/sprites/sprite.svg#ic_tg"></use>
+                    </svg></a></li>
+                <li><a href="#">
+                    <svg width="18" height="18">
+                      <use xlink:href="/img/sprites/sprite.svg#ic_yt"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+            <div class="footer-top__nav">
+              <div class="footer-top__nav-caption">Меню:</div>
+              <ul class="footer-top__nav-list">
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Условия работы</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">Персональные данные</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="footer-top__feedback">
+              <div class="footer-top__feedback-caption">Наши контакты:</div>
+              <div class="footer-top__phones">
+                <div class="footer-top__phone"><a class="link" href="#"><span>(800) 933-21-21</span></a>
+                  <div class="address">Офис: СПб, 1-й Верхний переулок д.10 к.1</div>
+                </div>
+                <div class="footer-top__phone"><a class="link" href="#"><span>(800) 955-55-25</span><span class="icon">
+                      <svg width="20" height="20">
+                        <use xlink:href="/img/sprites/sprite.svg#ic_viber"></use>
+                      </svg></span></a>
+                  <div class="address">Офис: СПб, 1-й Верхний переулок д.10 к.1</div>
+                </div>
+              </div>
+              <div class="footer-top__callback"><a class="btn btn_secondary" href="#"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13 2V7H18" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M19 1L13 7" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16.9995 14.9791V17.3877C17.0004 17.6113 16.9545 17.8327 16.8648 18.0375C16.775 18.2424 16.6434 18.4263 16.4783 18.5775C16.3132 18.7286 16.1183 18.8437 15.906 18.9154C15.6938 18.987 15.4689 19.0136 15.2457 18.9935C12.7702 18.725 10.3923 17.8808 8.30312 16.5286C6.35937 15.2959 4.71141 13.6512 3.47627 11.7113C2.11669 9.61679 1.27059 7.23206 1.00653 4.75036C0.986426 4.52834 1.01286 4.30457 1.08416 4.0933C1.15546 3.88203 1.27005 3.6879 1.42065 3.52325C1.57124 3.35861 1.75454 3.22706 1.95886 3.13699C2.16319 3.04691 2.38407 3.00029 2.60744 3.00008H5.02086C5.41128 2.99624 5.78977 3.13422 6.0858 3.3883C6.38182 3.64237 6.57517 3.99521 6.62981 4.38103C6.73168 5.15185 6.92059 5.9087 7.19295 6.63713C7.30118 6.9245 7.32461 7.23682 7.26045 7.53707C7.19629 7.83732 7.04723 8.11292 6.83093 8.33121L5.80925 9.35087C6.95446 11.3609 8.62206 13.0252 10.6361 14.1682L11.6578 13.1485C11.8765 12.9326 12.1527 12.7839 12.4535 12.7198C12.7544 12.6558 13.0673 12.6792 13.3552 12.7872C14.0851 13.059 14.8435 13.2476 15.6158 13.3492C16.0066 13.4042 16.3635 13.6007 16.6186 13.9012C16.8737 14.2017 17.0093 14.5853 16.9995 14.9791Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg><span>Заказать звонок</span></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="footer-bottom__content">
+            <div class="footer-bottom__copy">© «Наш прокат», 2022. Все права защищены</div>
+            <div class="footer-bottom__dev">
+              <div class="footer-bottom__dev-caption">Поддержка сайта –</div><a class="footer-bottom__dev-image" href="//promicom.ru"><img class="lazyload" loading="lazy" data-src="img/common/dev.svg" width="208" height="20"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="popup" id="callback">
+      <div class="popup__wrapper">
+        <div class="popup__close"><a href="#close">
+            <svg width="36" height="36">
+              <use xlink:href="/img/sprites/sprite.svg#ic_close-popup"></use>
+            </svg></a></div>
+        <div class="popup__content">
+          <div class="section-h2">Заказать звонок</div>
+          <form class="form" action="">
+            <div class="form__caption">Контактные данные</div>
+            <div class="form__fields">
+              <div class="form__field">
+                <div class="input input_text">
+                  <input type="text" placeholder="Имя" required="required"/>
+                </div>
+              </div>
+              <div class="form__field">
+                <div class="input input_tel">
+                  <input type="tel" placeholder="Телефон *" required="required"/>
+                </div>
+              </div>
+            </div>
+            <div class="form__footer">
+              <div class="form__submit">
+                <button class="btn btn_primary" type="submit">Жду звонка</button>
+              </div>
+              <div class="form__agreement">
+                <label class="checkbox">
+                  <input type="checkbox" required="" checked=""/><span class="checkbox__elem"></span><span class="checkbox__text">Нажимая на кнопку, даю согласие на обработку<a href="#"> персональных данных</a></span>
+                </label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/catalog.js"></script>
+  </body>
+</html>

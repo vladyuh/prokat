@@ -78,6 +78,60 @@ textarea {
   }
 }
 
+.input-number{
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+
+  &__dec,
+  &__inc{
+    width: 56px;
+    height: 56px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  input{
+    text-align: center;
+  }
+
+  &__dec{
+    background: #E6E6E6;
+    transition: all 0.25s ease;
+
+    &:hover{
+      background: #f0f0f0;
+    }
+
+  }
+
+  &__dec + input{
+    pointer-events: none;
+    user-select: none;
+  }
+
+  &__inc{
+    background: #FFFFFF;
+    border: 2px solid #F5890A;
+
+    transition: all 0.25s ease;
+
+    &:hover{
+      background: #F5890A;
+
+      svg path{
+        stroke: #fff;
+      }
+
+    }
+
+  }
+
+}
+
 .select {
 
   &__hidden {

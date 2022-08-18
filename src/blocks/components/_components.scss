@@ -8,6 +8,31 @@
 @import "../components/popup/popup.scss";
 @import "../components/table/table.scss";
 
+.page-breadcrumbs{
+  padding: 24px 0 0;
+
+  @media screen and (min-width: 1024px) {
+    padding: 48px 0 0;
+  }
+
+
+
+}
+
+.page-title{
+  padding: 12px 0 0;
+
+  .section-h1{
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 48px;
+    }
+
+  }
+
+}
+
 .catalog-more{
   display: none;
   align-items: center;

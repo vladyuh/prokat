@@ -1,23 +1,20 @@
-$textPrimary: #1f1f1f;
+$textPrimary: #000;
 $linkColor: #448aff;
-$marker: #000;
+$marker: #F5890A;
 $tableHead: #eef0fc;
 $tableBorder: #B5B5B5;
 
 .edit-content {
+
     h2 {
         margin-bottom: 8px;
     }
 
     p {
-        margin: 19px 0;
-        font-size: 15px;
-        line-height: 180%;
+        margin: 0 0 10px;
+        font-size: 16px;
+        line-height: 150%;
         color: $textPrimary;
-
-        @media screen and (min-width: 376px) {
-            font-size: 16px;
-        }
     }
 
     a {
@@ -41,7 +38,7 @@ $tableBorder: #B5B5B5;
         counter-reset: item;
 
         li {
-            padding-left: 23px;
+            padding-left: 24px;
             position: relative;
             counter-increment: item;
             font-size: 15px;
@@ -50,10 +47,6 @@ $tableBorder: #B5B5B5;
 
             p {
                 margin: 5px 0;
-            }
-
-            @media screen and (min-width: 577px) {
-                padding-left: 45px;
             }
         }
 
@@ -71,30 +64,26 @@ $tableBorder: #B5B5B5;
     }
 
     ul {
-        padding: 17px 0;
+        padding: 8px 0;
 
         li {
-            padding-left: 23px;
+            padding: 8px 0;
+            padding-left: 24px;
             position: relative;
-            font-size: 15px;
-            line-height: 180%;
+            font-size: 16px;
+            line-height: 150%;
             color: $textPrimary;
-
-            @media screen and (min-width: 577px) {
-                padding-left: 46px;
-            }
         }
 
         li::before {
             content: "";
             position: absolute;
-            top: 0.7em;
+            top: 20px;
             left: 0;
             display: block;
-            width: 7px;
-            height: 7px;
+            width: 12px;
+            height: 2px;
             background: $marker;
-            border-radius: 50%;
         }
     }
 
