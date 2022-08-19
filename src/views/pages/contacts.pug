@@ -1,0 +1,68 @@
+extends ../layouts/default
+include ../helpers/mixins
+include ../../blocks/components/breadcrumbs/breadcrumbs.pug
+include ../../blocks/components/form/form.pug
+include ../../blocks/components/checkbox/checkbox.pug
+include ../../blocks/components/headers/headers.pug
+include ../../blocks/components/table/table.pug
+include ../../blocks/components/popup/popup.pug
+include ../../blocks/components/card/card
+
+block variables
+    - const title = "Контакты"
+
+block styles
+    link(rel="stylesheet" href="styles/contacts.css")
+
+block content
+
+    .page-breadcrumbs
+        .container
+            +breadcrumb([
+                {
+                    link: "/",
+                    text: "Главная"
+                },
+                {
+                    link: "/contacts.html",
+                    text: "Контакты",
+                    isActive: true,
+                }
+            ])
+
+
+    .page-title
+        .container
+            h1.section-h1.page-title__heading Контактная информация
+
+    section.contacts-block
+        .container
+            .contacts-block__map
+                .contacts-block__map-wrapper#map
+            .contacts-block__info
+                .contacts-block__info-phones
+                    .contacts-block__info-title Телефоны и адреса
+                    .list
+                        .list-item
+                            a(href="tel:(800) 933-21-21").list-item__value
+                                span (800) 933-21-21
+                            .list-item__caption Офис: СПб, 1-й Верхний переулок д.10 к.1
+                        .list-item
+                            a(href="tel:(800) 933-21-21").list-item__value
+                                span (800) 955-55-25
+                                span.icon: +icons("#ic_viber",24)
+                            .list-item__caption Склад: СПб, Мурманское шоссе 12 км д. 2
+                .contacts-block__info-mail
+                    .contacts-block__info-title Электронная почта
+                    .list
+                        .list-item
+                            a(href="mailto:nashprokat@yandex.ru").list-item__value
+                                span nashprokat@yandex.ru
+                    a(href="#").btn.btn_primary Написать нам
+
+    include ../../blocks/modules/general/advantages/advantages
+
+
+block scripts
+    script(src="js/main.js")
+    script(src="js/contacts.js")

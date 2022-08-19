@@ -96,10 +96,10 @@ block content
                             li
                                 span.name Более 15 сут
                                 span.value <strong>1500 ₽</strong>
-                    .product-info__rent-form
+                    .product-info__rent-form(data-product-name="Мотопомпа Wacker Neuson MDP-3" data-product-price="2000")
                         .product-info__title Количество дней
                         .caption В зависимости от кол-ва дней цена может меняться
-                        form.form
+                        .form
                             .form__field
                                 .input.input-number
                                     span.input-number__controls.input-number__dec
@@ -113,32 +113,18 @@ block content
                                         <path d="M1 8L15 8" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                         </svg>
                             .form__submit
-                                button.btn.btn_primary заказать на 2000 ₽
+                                a(href="#order").btn.btn_primary заказать на 2000 ₽
                 .product-info__actions
                     a(href="#").product-info__action.add-favorite
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="#E6E6E6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
                         span Отложить товар
-                    a(href="#").product-info__action.question Вопрос по товару
+                    a(href="#question").product-info__action.question Вопрос по товару
 
 
 
-    .advantages-block
-        .container
-            .advantages-block__items
-                .advantages-block__item
-                    .icon: img.lazyload(loading="lazy" data-src="/img/card/ad-1.svg" width=64 height=64)
-                    .caption Более 200 единиц оборудования
-                .advantages-block__item
-                    .icon: img.lazyload(loading="lazy" data-src="/img/card/ad-2.svg" width=64 height=64)
-                    .caption Доставка за 60 минут
-                .advantages-block__item
-                    .icon: img.lazyload(loading="lazy" data-src="/img/card/ad-3.svg" width=64 height=64)
-                    .caption Минимальный залог
-                .advantages-block__item
-                    .icon: img.lazyload(loading="lazy" data-src="/img/card/ad-4.svg" width=64 height=64)
-                    .caption Скидки за аренду
+    include ../../blocks/modules/general/advantages/advantages
 
     .info-block
         .container
@@ -172,7 +158,8 @@ block content
                     "Мощность – 2200 Вт ",
                     "Число оборотов – 460 об/мин"
                 ],
-                price: "от 1300 ₽/сутки"
+                price: "от 1300 ₽/сутки",
+                priceNumber: "1300",
             },
             {
                 image: "/img/products/2",
@@ -182,7 +169,8 @@ block content
                     "Вес – 4.1 кг",
                     "Мощность – 1400 Вт"
                 ],
-                price: "от 1300 ₽/сутки"
+                price: "от 1300 ₽/сутки",
+                priceNumber: "1300",
             },
             {
                 image: "/img/products/3",
@@ -192,7 +180,8 @@ block content
                     "Мощность – 3,7 кВт",
                     "Глубина пропила – 125 мм"
                 ],
-                price: "от 2000 ₽/сутки"
+                price: "от 2000 ₽/сутки",
+                priceNumber: "2000",
             },
             {
                 image: "/img/products/4",
@@ -202,7 +191,8 @@ block content
                     "Мощность – 2200 Вт ",
                     "Число оборотов – 460 об/мин"
                 ],
-                price: "от 1000 ₽/сутки"
+                price: "от 1000 ₽/сутки",
+                priceNumber: "1000",
             },
             {
                 image: "/img/products/4",
@@ -212,7 +202,8 @@ block content
                     "Мощность – 2200 Вт ",
                     "Число оборотов – 460 об/мин"
                 ],
-                price: "от 1000 ₽/сутки"
+                price: "от 1000 ₽/сутки",
+                priceNumber: "1000",
             },
         ]
 

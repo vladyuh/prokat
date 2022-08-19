@@ -38,7 +38,7 @@ count.forEach(function (el){
     el.addEventListener('click', function (){
 
         var value = el.parentElement.querySelector('input[type="number"]').value;
-        var button = document.querySelector('.product-info__rent-form button');
+        var button = document.querySelector('.product-info__rent-form .btn');
 
         if(Number(value) < 2) {
             button.textContent = "заказать на 2000 ₽";

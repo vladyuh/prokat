@@ -77,6 +77,11 @@
     &__field{
       width: calc(100% / 2 - 12px);
       margin-bottom: 24px;
+
+      &.fullwidth{
+        width: 100%;
+      }
+
     }
 
     &__submit{
@@ -177,5 +182,117 @@
 
   }
 
+
+}
+
+.popup.popup-order{
+
+  .form__fields{
+    width: 100%;
+  }
+
+  .form__section.equipment{
+    position: relative;
+    margin-bottom: 48px;
+    padding-bottom: 24px;
+    &::after{
+      position: absolute;
+      bottom: 0;
+      left: -68px;
+      right: -68px;
+      content: "";
+      height: 2px;
+      background: #e6e6e6;
+
+      @media screen and (max-width: 1152px) {
+        left: -48px;
+        right: -48px;
+      }
+
+      @media screen and (max-width: 480px) {
+        left: -24px;
+        right: -24px;
+      }
+
+    }
+  }
+
+  .form__field{
+    display: flex;
+    flex-direction: column;
+
+    &.equipment-name{
+      width: calc(50% - 12px);
+
+      @media screen and (max-width: 768px) {
+        width: calc(100%);
+      }
+
+    }
+
+    &.equipment-count,
+    &.equipment-price{
+      width: calc(25% - 12px);
+
+      @media screen and (max-width: 768px) {
+        width: calc(50% - 12px);
+      }
+
+      @media screen and (max-width: 576px) {
+        width: calc(100%);
+        text-align: left;
+      }
+
+    }
+
+    &.equipment-count .input{
+      margin: auto 0;
+    }
+
+    &.equipment-price{
+      text-align: right;
+    }
+
+    .equipment-name__wrapper{
+      display: flex;
+      align-items: center;
+    }
+
+    .equipment-name__image{
+      flex-shrink: 0;
+      margin-right: 12px;
+    }
+
+    .equipment-price__value{
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 40px / 28px * 100%;
+      margin: auto 0;
+    }
+
+  }
+
+  .form__field.radios{
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+
+    .radio{
+      padding-right: 24px;
+    }
+
+  }
+
+
+
+  span.label{
+    padding-bottom: 24px;
+    margin-bottom: auto;
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    color: #888888;
+  }
 
 }

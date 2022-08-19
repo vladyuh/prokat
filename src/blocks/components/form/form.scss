@@ -17,6 +17,7 @@ textarea {
   border-radius: 0;
 }
 
+
 input[type="submit"] {
   border: none;
   cursor: pointer;
@@ -47,6 +48,11 @@ textarea {
     color: #888888;
   }
 }
+
+textarea{
+  min-height: 168px;
+}
+
 
 .input,
 .select,

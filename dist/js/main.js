@@ -227,3 +227,52 @@ numberInputs.forEach(function (el){
 
     }
 })
+
+var cardOrder = document.querySelectorAll('.product-card .product-card__actions');
+cardOrder.forEach(function (el){
+
+    var button = el.querySelector('.product-card__rent .btn');
+    button.addEventListener('click', function (){
+
+        var image = el.parentElement.querySelector('.product-card__image img').src;
+        var name = el.parentElement.querySelector('.product-card__name').textContent;
+        var price = el.parentElement.querySelector('.product-card__rent .price').getAttribute('data-price');
+
+        var popupOrder = document.querySelector('.popup-order');
+
+        popupOrder.querySelector('.equipment-name__image img').src = image;
+        popupOrder.querySelector('.equipment-name__caption').textContent = name;
+
+        popupOrder.querySelector('.equipment-name .input-hidden input').value = name;
+
+        popupOrder.querySelector('.equipment-price__number').textContent = price;
+        popupOrder.querySelector('.equipment-price .input-hidden input').value = name;
+
+    })
+})
+
+var productOrder = document.querySelectorAll('.product-info__rent-form');
+productOrder.forEach(function (el){
+
+    var button = el.querySelector('.form__submit .btn');
+    button.addEventListener('click', function (){
+
+        var image = document.querySelector('.product .product-image img').src;
+        var name = el.getAttribute('data-product-name');
+        var price = el.getAttribute('data-product-price');
+        var count = el.querySelector('.input-number input').value;
+
+        var popupOrder = document.querySelector('.popup-order');
+
+        popupOrder.querySelector('.equipment-name__image img').src = image;
+        popupOrder.querySelector('.equipment-name__caption').textContent = name;
+
+        popupOrder.querySelector('.equipment-name .input-hidden input').value = name;
+
+        popupOrder.querySelector('.equipment-count .input-number input').value = count;
+
+        popupOrder.querySelector('.equipment-price__number').textContent = price;
+        popupOrder.querySelector('.equipment-price .input-hidden input').value = name;
+
+    })
+})

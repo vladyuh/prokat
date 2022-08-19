@@ -1,0 +1,56 @@
+@import "helpers/variables";
+@import "helpers/mixins";
+
+@import "../blocks/components/card/card";
+
+.favorites{
+  padding: 0 0 60px;
+
+  @media screen and (min-width: 1024px) {
+    padding: 0 0 100px;
+  }
+
+  &-products{
+    margin: 0 -6px;
+    margin-top: -6px;
+    display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 1200px) {
+      margin-top: -12px;
+    }
+
+    .product-card{
+      width: calc(100% - 12px);
+      margin: 6px;
+      display: flex;
+      flex-direction: column;
+
+      &__actions{
+        margin-top: auto;
+      }
+
+      @media screen and (min-width: 500px) {
+
+        width: calc(100% / 2 - 12px);
+
+      }
+
+      @media screen and (min-width: 830px) {
+
+        width: calc(100% / 3 - 12px);
+
+      }
+
+      @media screen and (min-width: 1200px) {
+
+        width: calc(100% / 4 - 24px);
+        margin: 12px;
+
+      }
+
+    }
+
+  }
+
+}

@@ -1,0 +1,154 @@
+@import "helpers/variables";
+@import "helpers/mixins";
+
+@import "../blocks/modules/general/advantages/advantages";
+
+.contacts-block{
+  padding: 0 0 48px;
+
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__map{
+    width: 100%;
+    position: relative;
+    padding-top: 60%;
+
+    &-wrapper{
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+  }
+
+  &__info{
+    width: 100%;
+    border: 2px solid #E6E6E6;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    &-title{
+      font-size: 14px;
+      line-height: 20px;
+      color: #888888;
+      margin-bottom: 4px;
+    }
+
+    &-phones{
+      border-bottom: 2px solid #E6E6E6;
+    }
+
+    .list{
+      &-item{
+        padding: 8px 0;
+
+        &__value{
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 40px / 24px * 100%;
+          letter-spacing: 0.04em;
+          display: flex;
+          align-items: center;
+
+          .icon{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 10px;
+          }
+
+        }
+
+        &__caption{
+          font-size: 14px;
+          line-height: 20px;
+          color: #888888;
+        }
+
+      }
+    }
+
+    &-phones,
+    &-mail{
+      padding: 32px 32px 24px;
+      flex-grow: 1;
+    }
+
+    &-mail{
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 0;
+
+      .list{
+        margin-bottom: 16px;
+      }
+
+      .btn{
+        margin: auto -34px -2px;
+      }
+
+    }
+
+  }
+
+  @media screen and (min-width: 640px) {
+
+    &__map{
+      width: 50%;
+    }
+
+    &__info{
+      width: 50%;
+    }
+
+  }
+
+  @media screen and (min-width: 768px) {
+
+    &__map{
+      width: 60%;
+    }
+
+    &__info{
+      width: 40%;
+    }
+
+  }
+
+  @media screen and (min-width: 1024px) {
+
+    &__map{
+      width: 806px / 1224px * 100%;
+      padding-top: 0;
+    }
+
+    &__info{
+      width: 416px / 1224px * 100%;
+
+      &-phones,
+      &-mail{
+        min-height: 232px;
+      }
+
+    }
+
+  }
+
+}
+
+.advantages-block{
+  padding: 0 0 60px;
+
+  @media screen and (min-width: 1024px) {
+    padding: 0 0 100px;
+  }
+
+}

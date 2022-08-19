@@ -1,0 +1,77 @@
+@import "helpers/variables";
+@import "helpers/mixins";
+
+.textpage{
+  padding: 0 0 60px;
+
+  @media screen and (min-width: 1024px) {
+    padding: 0 0 100px;
+  }
+
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &-sidebar{
+    width: 100%;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 1024px) {
+      width: 288px;
+      margin-right: auto;
+      margin-bottom: 0;
+    }
+
+    &__nav{
+      display: flex;
+      flex-wrap: wrap;
+      margin: -6px -6px 0;
+
+      li{
+        width: calc(100% - 12px);
+        margin: 6px;
+
+        @media screen and (min-width: 481px) {
+          width: calc(100% / 2 - 12px);
+        }
+
+        @media screen and (min-width: 830px) {
+          width: calc(100% / 3 - 12px);
+        }
+
+        @media screen and (min-width: 1024px) {
+          width: calc(100% - 12px);
+        }
+
+      }
+
+      a{
+        padding: 16px;
+        border: 2px solid #E6E6E6;
+        font-weight: 700;
+        display: block;
+        background: #FFFFFF;
+        transition: all 0.3s ease;
+
+        &:hover{
+          border-color: #F5890A;
+          color: #F5890A;
+        }
+
+      }
+
+    }
+
+  }
+
+  &-content{
+    width: 100%;
+
+    @media screen and (min-width: 1024px) {
+      width: calc(100% - (288px + 24px));
+    }
+
+  }
+
+}

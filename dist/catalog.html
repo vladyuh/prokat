@@ -64,16 +64,16 @@
           </div>
           <nav class="header-bottom__nav">
             <ul>
-              <li><a href="catalog-subcategory.html">Условия работы</a></li>
-              <li><a href="catalog-subcategory.html">Доставка и оплата</a></li>
-              <li><a href="catalog-subcategory.html">Контакты</a></li>
+              <li><a href="work.html">Условия работы</a></li>
+              <li><a href="delivery.html">Доставка и оплата</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
             </ul>
           </nav>
           <div class="header-bottom__search">
             <svg width="24" height="24">
               <use xlink:href="/img/sprites/sprite.svg#ic_search"></use>
             </svg>
-          </div><a class="header-bottom__favorites" href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" id="ic_fav"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div><a class="header-bottom__favorites" href="favorites.html"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" id="ic_fav"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           <form class="header-bottom__form form">
             <div class="form__field">
               <div class="input input_search input_icon">
@@ -212,9 +212,9 @@
             <div class="header-bottom__dropdown-section info">
               <div class="caption">Информация:</div>
               <ul class="list-items">
-                <li class="list-items__item"><a class="list-items__title" href="#">Условия работы</a></li>
-                <li class="list-items__item"><a class="list-items__title" href="#">Доставка и оплата</a></li>
-                <li class="list-items__item"><a class="list-items__title" href="#">Контакты</a></li>
+                <li class="list-items__item"><a class="list-items__title" href="work.html">Условия работы</a></li>
+                <li class="list-items__item"><a class="list-items__title" href="delivery.html">Доставка и оплата</a></li>
+                <li class="list-items__item"><a class="list-items__title" href="contacts.html">Контакты</a></li>
               </ul>
             </div>
           </div>
@@ -473,6 +473,127 @@
               <div class="form__agreement">
                 <label class="checkbox">
                   <input type="checkbox" required="" checked=""/><span class="checkbox__elem"></span><span class="checkbox__text">Нажимая на кнопку, даю согласие на обработку<a href="#"> персональных данных</a></span>
+                </label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="popup" id="question">
+      <div class="popup__wrapper">
+        <div class="popup__close"><a href="#close">
+            <svg width="36" height="36">
+              <use xlink:href="/img/sprites/sprite.svg#ic_close-popup"></use>
+            </svg></a></div>
+        <div class="popup__content">
+          <div class="section-h2">Задать вопрос</div>
+          <form class="form" action="">
+            <div class="form__caption">Контактные данные</div>
+            <div class="form__fields">
+              <div class="form__field">
+                <div class="input input_text">
+                  <input type="text" placeholder="Имя" required="required"/>
+                </div>
+              </div>
+              <div class="form__field">
+                <div class="input input_tel">
+                  <input type="tel" placeholder="Телефон *" required="required"/>
+                </div>
+              </div>
+              <div class="form__field fullwidth">
+                <div class="textarea">
+                  <textarea placeholder="Текст вопроса *" required="required"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="form__footer">
+              <div class="form__submit">
+                <button class="btn btn_primary" type="submit">Отправить</button>
+              </div>
+              <div class="form__agreement">
+                <label class="checkbox">
+                  <input type="checkbox" required="" checked=""/><span class="checkbox__elem"></span><span class="checkbox__text">Нажимая на кнопку, даю согласие на обработку<a href="#"> персональных данных</a></span>
+                </label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="popup popup-order" id="order">
+      <div class="popup__wrapper">
+        <div class="popup__close"><a href="#close">
+            <svg width="36" height="36">
+              <use xlink:href="/img/sprites/sprite.svg#ic_close-popup"></use>
+            </svg></a></div>
+        <div class="popup__content">
+          <div class="section-h2">Заказ аренды</div>
+          <form class="form" action="">
+            <div class="form__section equipment">
+              <div class="form__fields">
+                <div class="form__field equipment-name"><span class="label">Товар</span>
+                  <div class="equipment-name__wrapper">
+                    <div class="equipment-name__image"><img class="lazyload" loading="lazy" data-src="img/card/product.png" width="80" height="80"/></div>
+                    <div class="equipment-name__caption">Мотопомпа Wacker Neuson MDP-3</div>
+                  </div>
+                  <div class="input input-hidden">
+                    <input type="hidden" name="product"/>
+                  </div>
+                </div>
+                <div class="form__field equipment-count"><span class="label">Количество дней *</span>
+                  <div class="input input-number"><span class="input-number__controls input-number__dec"><svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 1H15" stroke="#888888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span>
+                    <input type="number" name="count" min="1" value="1"/><span class="input-number__controls input-number__inc"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 1V15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1 8L15 8" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span>
+                  </div>
+                </div>
+                <div class="form__field equipment-price"><span class="label">Цена за сутки</span>
+                  <div class="equipment-price__value"><span class="equipment-price__number">1900</span><span> ₽</span></div>
+                  <div class="input input-hidden">
+                    <input type="hidden" name="price"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form__section user">
+              <div class="form__caption">Контактные данные</div>
+              <div class="form__fields">
+                <div class="form__field">
+                  <div class="input input_text">
+                    <input type="text" name="user-name" placeholder="Имя"/>
+                  </div>
+                </div>
+                <div class="form__field">
+                  <div class="input input_tel">
+                    <input type="tel" name="user-phone" placeholder="Телефон *" required="required"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form__section delivery">
+              <div class="form__caption">Вариант доставки *</div>
+              <div class="form__fields">
+                <div class="form__field radios">
+                  <label class="radio">
+                    <input type="radio" name="delivery" checked="checked"/><span class="radio__elem"></span><span class="radio__text">Доставка – индивидуальный расчет</span>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="delivery"/><span class="radio__elem"></span><span class="radio__text">Самовывоз – бесплатно</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form__footer">
+              <div class="form__submit">
+                <button class="btn btn_primary" type="submit">Отправить заявку</button>
+              </div>
+              <div class="form__agreement">
+                <label class="checkbox">
+                  <input type="checkbox" name="agreement" required="" checked=""/><span class="checkbox__elem"></span><span class="checkbox__text">Нажимая на кнопку, даю согласие на обработку<a href="#"> персональных данных</a></span>
                 </label>
               </div>
             </div>

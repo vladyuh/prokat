@@ -30,3 +30,109 @@ mixin callbackPopup
                                 span.checkbox__text
                                     | Нажимая на кнопку, даю согласие на обработку
                                     a(href='#')  персональных данных
+mixin questionPopup
+    .popup#question
+        .popup__wrapper
+            .popup__close
+                a(href="#close"): +icons('#ic_close-popup', 36)
+            .popup__content
+                .section-h2 Задать вопрос
+                form(action="").form
+                    .form__caption Контактные данные
+                    .form__fields
+                        .form__field
+                            +input({
+                                type: 'text',
+                                placeholder: "Имя",
+                                required: true,
+                            })
+                        .form__field
+                            +input({
+                                type: 'tel',
+                                placeholder: "Телефон *",
+                                required: true,
+                            })
+                        .form__field.fullwidth
+                            +textarea({
+                                placeholder: "Текст вопроса *",
+                                required: true,
+                            })
+                    .form__footer
+                        .form__submit
+                            button.btn.btn_primary(type="submit") Отправить
+                        .form__agreement
+                            label.checkbox
+                                input(type='checkbox' required='' checked='')
+                                span.checkbox__elem
+                                span.checkbox__text
+                                    | Нажимая на кнопку, даю согласие на обработку
+                                    a(href='#')  персональных данных
+mixin orderPopup
+    .popup.popup-order#order
+        .popup__wrapper
+            .popup__close
+                a(href="#close"): +icons('#ic_close-popup', 36)
+            .popup__content
+                .section-h2 Заказ аренды
+                form(action="").form
+                    .form__section.equipment
+                        .form__fields
+                            .form__field.equipment-name
+                                span.label Товар
+                                .equipment-name__wrapper
+                                    .equipment-name__image: img.lazyload(loading="lazy" data-src="img/card/product.png" width=80 height=80)
+                                    .equipment-name__caption Мотопомпа Wacker Neuson MDP-3
+                                .input.input-hidden
+                                    input(type="hidden" name="product")
+                            .form__field.equipment-count
+                                span.label Количество дней *
+                                .input.input-number
+                                    span.input-number__controls.input-number__dec
+                                        <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1H15" stroke="#888888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    input(type="number" name="count" min=1 value=1)
+                                    span.input-number__controls.input-number__inc
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 1V15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M1 8L15 8" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                            .form__field.equipment-price
+                                span.label Цена за сутки
+                                .equipment-price__value
+                                    span.equipment-price__number 1900
+                                    span  ₽
+                                .input.input-hidden
+                                    input(type="hidden" name="price")
+
+                    .form__section.user
+                        .form__caption Контактные данные
+                        .form__fields
+                            .form__field
+                                .input.input_text
+                                    input(type='text' name="user-name" placeholder='Имя')
+                            .form__field
+                                .input.input_tel
+                                    input(type='tel' name="user-phone" placeholder='Телефон *' required='required')
+                    .form__section.delivery
+                        .form__caption Вариант доставки *
+                        .form__fields
+                            .form__field.radios
+                                label.radio
+                                    input(type='radio' name="delivery" checked)
+                                    span.radio__elem
+                                    span.radio__text Доставка – индивидуальный расчет
+                                label.radio
+                                    input(type='radio' name="delivery")
+                                    span.radio__elem
+                                    span.radio__text Самовывоз – бесплатно
+                    .form__footer
+                        .form__submit
+                            button.btn.btn_primary(type="submit") Отправить заявку
+                        .form__agreement
+                            label.checkbox
+                                input(type='checkbox' name="agreement" required='' checked='')
+                                span.checkbox__elem
+                                span.checkbox__text
+                                    | Нажимая на кнопку, даю согласие на обработку
+                                    a(href='#')  персональных данных
